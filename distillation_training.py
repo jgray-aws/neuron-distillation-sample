@@ -67,8 +67,13 @@ class KnowledgeDistillationTrainer(Trainer):
         self.temperature = temperature
         self.alpha = alpha
     
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         # Get student outputs
+        # print("Keys in inputs:", inputs.keys())
+        # print("Input shapes:")
+        # for key, value in inputs.items():
+        #     if isinstance(value, torch.Tensor):
+        #         print(f"{key}: {value.shape}")
         student_outputs = model(
             input_ids=inputs['input_ids'],
             attention_mask=inputs['attention_mask']
@@ -115,7 +120,9 @@ def main():
     model_vocab_size = student_model.config.vocab_size
     
     # Prepare dataset
-    train_dataset = SentimentDataset('output_student.json', tokenizer, model_vocab_size=model_vocab_size)
+    train_dataset = SentimentDataset('output.json', tokenizer, model_vocab_size=model_vocab_size)
+
+    # print(train_dataset[0])
     
     # Training arguments
     training_args = DistillationTrainingArguments(
@@ -125,7 +132,6 @@ def main():
         gradient_accumulation_steps=4,
         warmup_steps=500,
         learning_rate=5e-5,
-        fp16=True,
         logging_dir="./logs",
         logging_steps=100,
         save_strategy="epoch",
@@ -134,8 +140,9 @@ def main():
         # Add memory optimization arguments
         gradient_checkpointing=True,
         optim="adamw_torch",
-        dataloader_num_workers=1,
-        dataloader_pin_memory=True
+        dataloader_num_workers=0,
+        dataloader_pin_memory=True,
+        remove_unused_columns=False
     )
     
     # Initialize trainer

@@ -3,7 +3,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import json
 
 # Initialize model and tokenizer
-model_name = "meta-llama/Llama-3.2-1B-Instruct"
+model_name = "meta-llama/Llama-3.1-8B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = "<|finetune_right_pad_id|>"
 model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16)
@@ -99,7 +99,7 @@ with open('dataset.txt', 'r') as f:
                 })
 
 # Write results to output file
-with open('output_student.json', 'w') as f:
+with open('output.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 print(f"Processing complete! Processed {len(results)} prompts. Results written to output.json")

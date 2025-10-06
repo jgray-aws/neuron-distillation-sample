@@ -1,0 +1,2828 @@
+[
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            55.83333206176758
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.42708206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The service at this restaurant exceeded all my expectations!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe service at this restaurant exceeded all my expectations!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.83333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.447914123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I can't believe how rude the staff was today.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI can't believe how rude the staff was today.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.484375
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.229164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.979164123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The weather is 72 degrees with partial clouds.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe weather is 72 degrees with partial clouds.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.28645706176758
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.875
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.510414123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            44.89583206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My flight was delayed for the third time this week.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nMy flight was delayed for the third time this week.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            46.901039123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.463539123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The package arrived on schedule as expected.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe package arrived on schedule as expected.assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": [
+            4031,
+            17914
+          ],
+          "logits": [
+            41.38020706176758,
+            43.33333206176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            55.3125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.432289123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "This phone's battery life is absolutely amazing!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThis phone's battery life is absolutely amazing!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            45.44270706176758
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            56.71875
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.08333206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The store will be closed from 2PM to 4PM.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe store will be closed from 2PM to 4PM.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            45.807289123535156
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            56.666664123535156
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            56.354164123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            43.619789123535156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "I deeply regret purchasing this defective product.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nI deeply regret purchasing this defective product.assistant\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 98227,
+          "logits": [
+            45.885414123535156
+          ]
+        },
+        {
+          "indices": 24093,
+          "logits": [
+            48.697914123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            46.61458206176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Our team just won the championship - best day ever!",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nOur team just won the championship - best day ever!assistant\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17914,
+          "logits": [
+            44.921875
+          ]
+        },
+        {
+          "indices": 45450,
+          "logits": [
+            57.03125
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            47.31770706176758
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The report contains data from the last fiscal year.",
+    "response": {
+      "generated_text": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.user\n\nThe report contains data from the last fiscal year.assistant\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 4031,
+          "logits": [
+            42.578125
+          ]
+        },
+        {
+          "indices": 1406,
+          "logits": [
+            54.0625
+          ]
+        },
+        {
+          "indices": 52831,
+          "logits": [
+            57.291664123535156
+          ]
+        },
+        {
+          "indices": 128009,
+          "logits": [
+            45.026039123535156
+          ]
+        }
+      ]
+    }
+  }
+]
