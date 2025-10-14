@@ -27,7 +27,7 @@ from optimum.neuron import NeuronTrainer, NeuronTrainingArguments
 from optimum.neuron.models.training import NeuronModelForCausalLM as TrainingNeuronModelForCausalLM
 from optimum.neuron import NeuronModelForCausalLM
 
-
+from util import print_tensor_shapes
 
 # =============================================================================
 # Distillation Trainer
@@ -48,22 +48,15 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
         # Do something with num_items_in_batch
             pass
         
+        print_tensor_shapes(inputs)
+
         student_outputs = model(
             input_ids=inputs['input_ids'],
             attention_mask=inputs['attention_mask']
         )
         student_logits = student_outputs.logits
-
-        # Get student outputs
-        student_outputs = model(**inputs)
-        student_logits = student_outputs.logits
         
         inputs = {k: v.to('xla') if torch.is_tensor(v) else v for k, v in inputs.items()}
-        
-        # Get teacher outputs (no gradients)
-        with torch.no_grad():
-            teacher_outputs = self.teacher_model(**inputs)
-            teacher_logits = teacher_outputs.logits
         
         # Hard loss (standard language modeling loss)
         hard_loss = F.cross_entropy(
@@ -90,7 +83,7 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
 # Data Loading and Preprocessing Function
 # =============================================================================
 # NOTE: this section can be adapted to load any dataset you want.
-class SentimentDataset(Dataset):
+class FixedShapeSentimentDataset(Dataset):
     def __init__(self, json_file, tokenizer, max_length=2048, model_vocab_size=128256):
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -106,7 +99,7 @@ class SentimentDataset(Dataset):
     def __getitem__(self, idx):
         item = self.data[idx]
         
-        # Tokenize the prompt
+        # Tokenize the prompt with fixed length
         encoded = self.tokenizer.encode_plus(
             item['prompt'],
             max_length=self.max_length,
@@ -115,15 +108,31 @@ class SentimentDataset(Dataset):
             return_tensors='pt'
         )
         
-        # Use the generated text as labels
+        # Create fixed-size tensors
+        input_ids = encoded['input_ids'][0]
+        attention_mask = encoded['attention_mask'][0]
+        
+        # Ensure input tensors are exactly max_length
+        if input_ids.size(0) < self.max_length:
+            pad_length = self.max_length - input_ids.size(0)
+            input_ids = torch.cat([input_ids, torch.full((pad_length,), self.tokenizer.pad_token_id)])
+            attention_mask = torch.cat([attention_mask, torch.zeros(pad_length)])
+        
+        # Process labels with fixed length
         label = self.tokenizer.encode(
             item['response']['generated_text'],
             max_length=self.max_length,
             padding='max_length',
             truncation=True
         )
+        label_tensor = torch.tensor(label)
         
-        # Process teacher logits
+        # Ensure label tensor is exactly max_length
+        if label_tensor.size(0) < self.max_length:
+            pad_length = self.max_length - label_tensor.size(0)
+            label_tensor = torch.cat([label_tensor, torch.full((pad_length,), -100)])  # Use -100 for ignored positions
+            
+        # Process teacher logits with fixed shape
         logits = []
         for token_info in item['response']['token_logits']:
             token_logits = torch.zeros(self.model_vocab_size)
@@ -131,18 +140,20 @@ class SentimentDataset(Dataset):
                 token_info['indices'] = [token_info['indices']]
                 
             for idx, logit in zip(token_info['indices'], token_info['logits']):
-                token_logits[idx] = logit
+                if idx < self.model_vocab_size:  # Ensure index is within bounds
+                    token_logits[idx] = logit
             logits.append(token_logits)
         
-        # Pad logits to max_length
+        # Pad logits to exactly max_length
         while len(logits) < self.max_length:
             logits.append(torch.zeros(self.model_vocab_size))
+        logits = logits[:self.max_length]  # Truncate if necessary
         
         return {
-            'input_ids': encoded['input_ids'][0],
-            'attention_mask': encoded['attention_mask'][0],
-            'labels': torch.tensor(label),
-            'teacher_logits': torch.stack(logits[:self.max_length])
+            'input_ids': input_ids,
+            'attention_mask': attention_mask,
+            'labels': label_tensor,
+            'teacher_logits': torch.stack(logits)
         }
 
 # =============================================================================
@@ -177,7 +188,7 @@ def train(model_id, tokenizer, training_args):
     model_vocab_size = student_model.config.vocab_size
     
     # Prepare dataset
-    train_dataset = SentimentDataset('output.json', tokenizer, model_vocab_size=model_vocab_size)
+    train_dataset = FixedShapeSentimentDataset('output.json', tokenizer, model_vocab_size=model_vocab_size)
     
     # # Training arguments
     # training_args = DistillationTrainingArguments(

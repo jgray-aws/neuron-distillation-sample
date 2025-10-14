@@ -26,7 +26,7 @@ else
     MAX_STEPS=-1
 fi
 
-torchrun --nproc_per_node $PROCESSES_PER_NODE distill_rewrite.py \
+torchrun --nproc_per_node $PROCESSES_PER_NODE distill_neuron.py \
   --model_id $MODEL_NAME \
   --num_train_epochs $NUM_EPOCHS \
   --do_train \
