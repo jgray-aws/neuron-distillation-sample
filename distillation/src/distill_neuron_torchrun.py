@@ -188,7 +188,7 @@ def train(model_id, tokenizer, training_args):
     model_vocab_size = student_model.config.vocab_size
     
     # Prepare dataset
-    train_dataset = FixedShapeSentimentDataset('output.json', tokenizer, model_vocab_size=model_vocab_size)
+    train_dataset = FixedShapeSentimentDataset('data/output.json', tokenizer, model_vocab_size=model_vocab_size)
     
     # # Training arguments
     # training_args = DistillationTrainingArguments(

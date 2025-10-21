@@ -79,7 +79,7 @@ def process_text(input_text):
 
 # Read input file and process each line
 results = []
-with open('dataset.txt', 'r') as f:
+with open('../data/dataset.txt', 'r') as f:
     for line in f:
         # Skip empty lines
         if line.strip():
@@ -99,7 +99,7 @@ with open('dataset.txt', 'r') as f:
                 })
 
 # Write results to output file
-with open('output.json', 'w') as f:
+with open('../data/output.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 print(f"Processing complete! Processed {len(results)} prompts. Results written to output.json")
