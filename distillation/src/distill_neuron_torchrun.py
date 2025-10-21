@@ -29,6 +29,7 @@ from optimum.neuron import NeuronTrainer, NeuronTrainingArguments
 from optimum.neuron.models.training import NeuronModelForCausalLM as TrainingNeuronModelForCausalLM
 from optimum.neuron import NeuronModelForCausalLM
 
+
 # =============================================================================
 # Distillation Trainer
 # =============================================================================
@@ -91,15 +92,41 @@ class FixedShapeSentimentDataset(Dataset):
         with open(json_file, 'r') as f:
             self.data = json.load(f)
             
+    def create_conversation(self, sample):
+        system_message = (
+            "You are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment."
+        )
+        return [
+                {
+                    "role": "system",
+                    "content": system_message,
+                },
+                {
+                    "role": "user",
+                    "content": sample
+                },
+            ]
+
     def __len__(self):
         return len(self.data)
     
     def __getitem__(self, idx):
         item = self.data[idx]
+
+        # Create conversation format
+        conversation = self.create_conversation(item['prompt'])
+        
+        # Apply chat template
+        formatted_prompt = self.tokenizer.apply_chat_template(
+            conversation,
+            tokenize=False,
+            add_generation_prompt=True
+        )
+        
         
         # Tokenize the prompt with fixed length
         encoded = self.tokenizer.encode_plus(
-            item['prompt'],
+            formatted_prompt,
             max_length=self.max_length,
             padding='max_length',
             truncation=True,
@@ -180,9 +207,7 @@ def train(model_id, tokenizer, training_args):
     student_model = TrainingNeuronModelForCausalLM.from_pretrained(
         model_id,
         trn_config,
-        torch_dtype=dtype,
-        # Use FlashAttention2 for better performance and to be able to use larger sequence lengths.
-        # attn_implementation="flash_attention_2"
+        torch_dtype=dtype
     )
     
     model_vocab_size = student_model.config.vocab_size
@@ -190,26 +215,6 @@ def train(model_id, tokenizer, training_args):
     # Prepare dataset
     train_dataset = FixedShapeSentimentDataset('data/output.json', tokenizer, model_vocab_size=model_vocab_size)
     
-    # # Training arguments
-    # training_args = DistillationTrainingArguments(
-    #     output_dir="./distillation_output",
-    #     num_train_epochs=3,
-    #     per_device_train_batch_size=1,  # Process one sample at a time
-    #     gradient_accumulation_steps=4,
-    #     warmup_steps=500,
-    #     learning_rate=5e-5,
-    #     logging_dir="./logs",
-    #     logging_steps=100,
-    #     save_strategy="epoch",
-    #     temperature=4.0,
-    #     alpha=0.7,
-    #     # Add memory optimization arguments
-    #     gradient_checkpointing=True,
-    #     optim="adamw_torch",
-    #     dataloader_num_workers=0,
-    #     dataloader_pin_memory=True,
-    #     remove_unused_columns=False
-    # )
 
     # The NeuronSFTTrainer will use `format_dolly` to format the dataset and `lora_config` to apply LoRA on the
     # model.
@@ -246,22 +251,6 @@ if __name__ == "__main__":
 
     tokenizer = AutoTokenizer.from_pretrained(script_args.model_id)
     tokenizer.pad_token = "<|finetune_right_pad_id|>"
-
-    # Set chat template for Llama 3.1 format
-    tokenizer.chat_template = (
-        "{% for message in messages %}"
-        "{% if message['role'] == 'system' %}"
-        "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>"
-        "{% elif message['role'] == 'user' %}"
-        "<|start_header_id|>user<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>"
-        "{% elif message['role'] == 'assistant' %}"
-        "<|start_header_id|>assistant<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>"
-        "{% endif %}"
-        "{% endfor %}"
-        "{% if add_generation_prompt %}"
-        "<|start_header_id|>assistant<|end_header_id|>\n\n"
-        "{% endif %}"
-    )
 
     print(training_args.trn_config)
 

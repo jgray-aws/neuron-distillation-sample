@@ -8,7 +8,7 @@ from neuronx_distributed_inference.models.config import MoENeuronConfig, OnDevic
 from neuronx_distributed_inference.models.qwen3_moe.modeling_qwen3_moe import Qwen3MoeInferenceConfig, NeuronQwen3MoeForCausalLM
 from neuronx_distributed_inference.utils.hf_adapter import HuggingFaceGenerationAdapter, load_pretrained_config
 
-model_path = "/home/ubuntu/models--Qwen--Qwen3-30B-A3B"
+model_path = "Qwen/Qwen3-30B-A3B"
 traced_model_path = "/home/ubuntu/traced_model/Qwen3-30B-A3B/"
 
 torch.manual_seed(0)
@@ -112,6 +112,7 @@ if __name__ == "__main__":
                     print(generated_text)
                     # Process logits for each token
                     token_logits_list = []
+
                     for logits in token_logits:
                         # Get non-zero probabilities and their indices
                         # Filter out -inf values from logits
