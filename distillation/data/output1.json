@@ -1,402 +1,2782 @@
 [
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The service at this restaurant exceeded all my expectations!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe service at this restaurant exceeded all my expectations!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            81.09446716308594
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.76664733886719
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.0818862915039
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I can't believe how rude the staff was today.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI can't believe how rude the staff was today.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            66.27250671386719
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.47757720947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.436981201171875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The weather is 72 degrees with partial clouds.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe weather is 72 degrees with partial clouds.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.24393463134766
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.05834197998047
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            73.10778045654297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.40919876098633
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "My flight was delayed for the third time this week.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nMy flight was delayed for the third time this week.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            71.27720642089844
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            67.7044677734375
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.06456756591797
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The package arrived on schedule as expected.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe package arrived on schedule as expected.\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            79.06401824951172
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.60662078857422
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.27083587646484
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "This phone's battery life is absolutely amazing!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThis phone's battery life is absolutely amazing!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            80.9547348022461
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            70.64554595947266
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.57623291015625
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The store will be closed from 2PM to 4PM.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe store will be closed from 2PM to 4PM.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            71.75289154052734
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            70.31095886230469
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.87153625488281
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            62.83352279663086
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "I deeply regret purchasing this defective product.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nI deeply regret purchasing this defective product.\nassistant\n<think>\n\n</think>\n\nNEGATIVE",
+      "token_logits": [
+        {
+          "indices": 97127,
+          "logits": [
+            64.82474517822266
+          ]
+        },
+        {
+          "indices": 23215,
+          "logits": [
+            66.75880432128906
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.9395866394043
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "Our team just won the championship - best day ever!",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nOur team just won the championship - best day ever!\nassistant\n<think>\n\n</think>\n\nPOSITIVE",
+      "token_logits": [
+        {
+          "indices": 17456,
+          "logits": [
+            78.17782592773438
+          ]
+        },
+        {
+          "indices": 44350,
+          "logits": [
+            71.08092498779297
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            64.2060546875
+          ]
+        }
+      ]
+    }
   },
   {
     "prompt": "The report contains data from the last fiscal year.",
-    "error": "'tuple' object has no attribute 'shape'"
+    "response": {
+      "generated_text": "system\nYou are a sentiment classifier. You take input strings and return the sentiment of POSITIVE, NEGATIVE, or NEUTRAL. Only return the sentiment.\nuser\nThe report contains data from the last fiscal year.\nassistant\n<think>\n\n</think>\n\nNEUTRAL",
+      "token_logits": [
+        {
+          "indices": 3944,
+          "logits": [
+            73.70826721191406
+          ]
+        },
+        {
+          "indices": 1381,
+          "logits": [
+            72.04105377197266
+          ]
+        },
+        {
+          "indices": 51731,
+          "logits": [
+            76.50625610351562
+          ]
+        },
+        {
+          "indices": 151645,
+          "logits": [
+            63.46615982055664
+          ]
+        }
+      ]
+    }
   }
 ]

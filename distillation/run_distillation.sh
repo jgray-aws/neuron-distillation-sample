@@ -14,7 +14,7 @@ TP_DEGREE=2
 BS=1
 GRADIENT_ACCUMULATION_STEPS=16
 LOGGING_STEPS=1
-MODEL_NAME="meta-llama/Llama-3.2-1B-Instruct"
+MODEL_NAME="Qwen/Qwen3-0.6B"
 # MODEL_NAME="meta-llama/Llama-3.1-8B" # Change this to the desired model name
 OUTPUT_DIR="$(echo $MODEL_NAME | cut -d'/' -f2)-finetuned"
 DISTRIBUTED_ARGS="--nproc_per_node $PROCESSES_PER_NODE"
@@ -26,7 +26,7 @@ else
     MAX_STEPS=-1
 fi
 
-torchrun --nproc_per_node $PROCESSES_PER_NODE src/distill_neuron.py \
+torchrun --nproc_per_node $PROCESSES_PER_NODE src/distill_neuron_torchrun.py \
   --model_id $MODEL_NAME \
   --num_train_epochs $NUM_EPOCHS \
   --do_train \

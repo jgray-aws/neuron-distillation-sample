@@ -213,7 +213,7 @@ def train(model_id, tokenizer, training_args):
     model_vocab_size = student_model.config.vocab_size
     
     # Prepare dataset
-    train_dataset = FixedShapeSentimentDataset('data/output.json', tokenizer, model_vocab_size=model_vocab_size)
+    train_dataset = FixedShapeSentimentDataset('data/output1.json', tokenizer, model_vocab_size=model_vocab_size)
     
 
     # The NeuronSFTTrainer will use `format_dolly` to format the dataset and `lora_config` to apply LoRA on the

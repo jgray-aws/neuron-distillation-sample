@@ -128,7 +128,10 @@ if __name__ == "__main__":
                     print(token_logits_list)
                     results.append({
                         'prompt': line.strip(),
-                        'response': token_logits_list
+                        'response': {
+                            'generated_text': generated_text,
+                            'token_logits': token_logits_list
+                        }
                     })
                     # print(f"Processed prompt: {line[:50]}...")  # Progress indicator
                 except Exception as e:
