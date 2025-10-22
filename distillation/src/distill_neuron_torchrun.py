@@ -186,16 +186,14 @@ class FixedShapeSentimentDataset(Dataset):
 # =============================================================================
 # Model Loading and Training Loop Function
 # =============================================================================
-def train(model_id, tokenizer, training_args):
+def train(script_args, training_args):
     # NOTE: Models with a custom modeling implementation (like Llama, Qwen3, Granite, etc) need a `TrainingNeuronConfig`
     # to be passed. This configuration defines modeling customization and distributed training parameters.
     # It is automatically created when using `NeuronTrainingArguments`.
-    student_model_name = "meta-llama/Llama-3.2-1B-Instruct"
     trn_config = training_args.trn_config
     dtype = torch.bfloat16 if training_args.bf16 else torch.float32
 
-    tokenizer = AutoTokenizer.from_pretrained(student_model_name)
-    tokenizer.pad_token = "<|finetune_right_pad_id|>"
+    tokenizer = AutoTokenizer.from_pretrained(script_args.model_id)
 
     
     # Data collator
@@ -205,7 +203,7 @@ def train(model_id, tokenizer, training_args):
     )
     
     student_model = TrainingNeuronModelForCausalLM.from_pretrained(
-        model_id,
+        script_args.model_id,
         trn_config,
         torch_dtype=dtype
     )
@@ -235,10 +233,11 @@ def train(model_id, tokenizer, training_args):
 @dataclass
 class ScriptArguments:
     temperature: Optional[float] = field(default=4.0),
-    alpha: Optional[float] = field(default=0.7)
+    alpha: Optional[float] = field(default=0.7),
     model_id: Optional[str] = field(default="meta-llama/Llama-3.2-1B-Instruct",
-        metadata={"help": "The model that you want to train from the Hugging Face hub."},
-    
+        metadata={"help": "The model that you want to train from the Hugging Face hub."}),
+    training_set: Optional[str] = field(default="data/output1.json",
+        metadata={"help": "The training dataset."},
     )
 
 
@@ -249,13 +248,10 @@ if __name__ == "__main__":
     parser = HfArgumentParser((ScriptArguments, NeuronTrainingArguments))
     script_args, training_args = parser.parse_args_into_dataclasses()
 
-    tokenizer = AutoTokenizer.from_pretrained(script_args.model_id)
-    tokenizer.pad_token = "<|finetune_right_pad_id|>"
 
     print(training_args.trn_config)
 
     train(
-        model_id=script_args.model_id,
-        tokenizer=tokenizer,
+        script_args=script_args,
         training_args=training_args,
     )
