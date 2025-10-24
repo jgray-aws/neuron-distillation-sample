@@ -234,7 +234,7 @@ def train(script_args, training_args):
 class ScriptArguments:
     temperature: Optional[float] = field(default=4.0),
     alpha: Optional[float] = field(default=0.7),
-    model_id: Optional[str] = field(default="meta-llama/Llama-3.2-1B-Instruct",
+    model_id: Optional[str] = field(default="Qwen/Qwen3-0.6B",
         metadata={"help": "The model that you want to train from the Hugging Face hub."}),
     training_set: Optional[str] = field(default="data/output1.json",
         metadata={"help": "The training dataset."},
