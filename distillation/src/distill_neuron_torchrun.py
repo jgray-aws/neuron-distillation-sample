@@ -214,8 +214,7 @@ def train(script_args, training_args):
     train_dataset = FixedShapeSentimentDataset('data/output1.json', tokenizer, model_vocab_size=model_vocab_size)
     
 
-    # The NeuronSFTTrainer will use `format_dolly` to format the dataset and `lora_config` to apply LoRA on the
-    # model.
+    # Customized KnowledgeDistillationTrainer
     distillation_trainer = KnowledgeDistillationTrainer(
         args=training_args,
         model=student_model,
@@ -225,7 +224,7 @@ def train(script_args, training_args):
     )
 
     distillation_trainer.train()
-    distillation_trainer.save_model("./final_distilled_model")
+    distillation_trainer.save_model(training_args.output_dir)
 
 # =============================================================================
 # Defining the script-specific arguments
