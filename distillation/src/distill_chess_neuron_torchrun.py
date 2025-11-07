@@ -49,6 +49,7 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
         Compute knowledge distillation loss combining:
         - Hard loss: standard cross-entropy with true labels
         - Soft loss: KL divergence between teacher and student logits
+        Only computed on non-masked tokens (where labels != -100)
         """
         if num_items_in_batch is not None:
             pass
@@ -59,23 +60,67 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
         )
         student_logits = student_outputs.logits
         
-        inputs = {k: v.to('xla') if torch.is_tensor(v) else v for k, v in inputs.items()}
+        # Move tensors to XLA device
+        device = student_logits.device
+        labels = inputs['labels'].to(device)
         
-        # Hard loss (standard language modeling loss)
+        # Shift logits and labels for next-token prediction
+        shift_logits = student_logits[..., :-1, :].contiguous()
+        shift_labels = labels[..., 1:].contiguous()
+        
+        # Create mask for valid positions (where labels != -100)
+        mask = (shift_labels != -100).float()
+        
+        # Hard loss (standard cross-entropy with true labels)
         hard_loss = F.cross_entropy(
-            student_logits.view(-1, student_logits.size(-1)),
-            inputs['labels'].view(-1)
+            shift_logits.view(-1, shift_logits.size(-1)),
+            shift_labels.view(-1),
+            reduction='none'
         )
+        hard_loss = (hard_loss * mask.view(-1)).sum() / (mask.sum() + 1e-8)
         
-        # Soft loss (knowledge distillation)
-        student_soft = F.log_softmax(student_logits / self.temperature, dim=-1)
-        teacher_soft = F.softmax(inputs['teacher_logits'] / self.temperature, dim=-1)
+        # Soft loss (knowledge distillation) - reconstruct sparse teacher logits on-the-fly
+        batch_size, seq_len, vocab_size = shift_logits.shape
         
-        soft_loss = F.kl_div(
+        # Only create teacher logits tensor for positions with labels (much more memory efficient)
+        # We'll compute KL loss only on non-masked positions
+        teacher_logits_sparse_batch = inputs['teacher_logits_sparse']
+        num_prompt_tokens_batch = inputs['num_prompt_tokens']
+        num_full_tokens_batch = inputs['num_full_tokens']
+        
+        # Initialize teacher logits with very small values (log-space)
+        shift_teacher_logits = torch.full_like(shift_logits, -1e10)
+        
+        # Fill in sparse teacher logits for each sample in batch
+        for batch_idx in range(batch_size):
+            num_prompt = num_prompt_tokens_batch[batch_idx]
+            num_full = num_full_tokens_batch[batch_idx]
+            num_answer = num_full - num_prompt
+            sparse_logits = teacher_logits_sparse_batch[batch_idx]
+            
+            for token_idx, sparse_logit in enumerate(sparse_logits):
+                if token_idx < num_answer:
+                    # Position in the shifted sequence (accounting for the shift)
+                    position = num_prompt + token_idx
+                    if position < seq_len:
+                        for vocab_idx, logit_val in zip(sparse_logit['indices'], sparse_logit['logits']):
+                            if vocab_idx < vocab_size:
+                                shift_teacher_logits[batch_idx, position, vocab_idx] = logit_val
+        
+        # Compute soft loss with temperature scaling
+        student_soft = F.log_softmax(shift_logits / self.temperature, dim=-1)
+        teacher_soft = F.softmax(shift_teacher_logits / self.temperature, dim=-1)
+        
+        # KL divergence per position
+        kl_loss = F.kl_div(
             student_soft.view(-1, student_soft.size(-1)),
             teacher_soft.view(-1, teacher_soft.size(-1)),
-            reduction='batchmean'
-        ) * (self.temperature ** 2)
+            reduction='none'
+        ).sum(dim=-1)
+        
+        # Apply mask and average
+        soft_loss = (kl_loss * mask.view(-1)).sum() / (mask.sum() + 1e-8)
+        soft_loss = soft_loss * (self.temperature ** 2)
         
         # Combined loss
         total_loss = self.alpha * soft_loss + (1 - self.alpha) * hard_loss
@@ -101,6 +146,10 @@ class ChessMoveDataset(Dataset):
         # Filter out samples with errors
         self.data = [item for item in self.data if 'error' not in item]
         print(f"Loaded {len(self.data)} valid chess samples")
+        
+        # Pre-process all data to avoid CPU bottleneck during training
+        print("Pre-processing dataset (this may take a minute)...")
+        self._preprocess_data()
             
     def create_conversation(self, instruction, input_text):
         """Create conversation format for chess move evaluation."""
@@ -115,77 +164,94 @@ class ChessMoveDataset(Dataset):
             },
         ]
 
+    def _preprocess_data(self):
+        """Pre-process all samples to avoid CPU bottleneck during training."""
+        self.processed_samples = []
+        
+        for idx, item in enumerate(self.data):
+            # Create conversation format
+            conversation = self.create_conversation(item['instruction'], item['input'])
+            
+            # Apply chat template to get the prompt
+            formatted_prompt = self.tokenizer.apply_chat_template(
+                conversation,
+                tokenize=False,
+                add_generation_prompt=True
+            )
+            
+            # Extract answer from teacher's response
+            teacher_response = item['response']['generated_text']
+            if 'assistant' in teacher_response:
+                answer_part = teacher_response.split('assistant')[-1].strip()
+                if '<think>' in answer_part:
+                    answer_part = answer_part.split('</think>')[-1].strip()
+                answer = answer_part
+            else:
+                answer = item['expected_output']
+            
+            # Build full sequence
+            full_text = formatted_prompt + answer
+            
+            # Tokenize
+            prompt_tokens = self.tokenizer.encode(formatted_prompt, add_special_tokens=False)
+            full_tokens = self.tokenizer.encode(full_text, add_special_tokens=False)
+            
+            # Truncate if needed
+            if len(full_tokens) > self.max_length:
+                full_tokens = full_tokens[:self.max_length]
+            
+            # Create tensors
+            input_ids = torch.tensor(full_tokens, dtype=torch.long)
+            labels = torch.full((len(full_tokens),), -100, dtype=torch.long)
+            if len(prompt_tokens) < len(full_tokens):
+                labels[len(prompt_tokens):] = input_ids[len(prompt_tokens):]
+            attention_mask = torch.ones(len(full_tokens), dtype=torch.long)
+            
+            # Pad to max_length
+            pad_length = self.max_length - len(full_tokens)
+            if pad_length > 0:
+                input_ids = torch.cat([input_ids, torch.full((pad_length,), self.tokenizer.pad_token_id, dtype=torch.long)])
+                attention_mask = torch.cat([attention_mask, torch.zeros(pad_length, dtype=torch.long)])
+                labels = torch.cat([labels, torch.full((pad_length,), -100, dtype=torch.long)])
+            
+            # Store sparse teacher logits (only non-zero values) to save memory
+            teacher_logits_sparse = []
+            for token_info in item['response']['token_logits']:
+                indices = token_info['indices'] if isinstance(token_info['indices'], list) else [token_info['indices']]
+                logits = token_info['logits'] if isinstance(token_info['logits'], list) else [token_info['logits']]
+                teacher_logits_sparse.append({
+                    'indices': indices,
+                    'logits': logits
+                })
+            
+            self.processed_samples.append({
+                'input_ids': input_ids,
+                'attention_mask': attention_mask,
+                'labels': labels,
+                'teacher_logits_sparse': teacher_logits_sparse,
+                'num_prompt_tokens': len(prompt_tokens),
+                'num_full_tokens': len(full_tokens)
+            })
+            
+            if (idx + 1) % 20 == 0:
+                print(f"  Processed {idx + 1}/{len(self.data)} samples...")
+        
+        print(f"Pre-processing complete! {len(self.processed_samples)} samples ready.")
+    
     def __len__(self):
-        return len(self.data)
+        return len(self.processed_samples)
     
     def __getitem__(self, idx):
-        item = self.data[idx]
-
-        # Create conversation format
-        conversation = self.create_conversation(item['instruction'], item['input'])
-        
-        # Apply chat template
-        formatted_prompt = self.tokenizer.apply_chat_template(
-            conversation,
-            tokenize=False,
-            add_generation_prompt=True
-        )
-        
-        # Tokenize the prompt with fixed length
-        encoded = self.tokenizer.encode_plus(
-            formatted_prompt,
-            max_length=self.max_length,
-            padding='max_length',
-            truncation=True,
-            return_tensors='pt'
-        )
-        
-        # Create fixed-size tensors
-        input_ids = encoded['input_ids'][0]
-        attention_mask = encoded['attention_mask'][0]
-        
-        # Ensure input tensors are exactly max_length
-        if input_ids.size(0) < self.max_length:
-            pad_length = self.max_length - input_ids.size(0)
-            input_ids = torch.cat([input_ids, torch.full((pad_length,), self.tokenizer.pad_token_id)])
-            attention_mask = torch.cat([attention_mask, torch.zeros(pad_length)])
-        
-        # Process labels with fixed length
-        label = self.tokenizer.encode(
-            item['response']['generated_text'],
-            max_length=self.max_length,
-            padding='max_length',
-            truncation=True
-        )
-        label_tensor = torch.tensor(label)
-        
-        # Ensure label tensor is exactly max_length
-        if label_tensor.size(0) < self.max_length:
-            pad_length = self.max_length - label_tensor.size(0)
-            label_tensor = torch.cat([label_tensor, torch.full((pad_length,), -100)])
-            
-        # Process teacher logits with fixed shape
-        logits = []
-        for token_info in item['response']['token_logits']:
-            token_logits = torch.zeros(self.model_vocab_size)
-            if isinstance(token_info['indices'], int):
-                token_info['indices'] = [token_info['indices']]
-                
-            for idx, logit in zip(token_info['indices'], token_info['logits']):
-                if idx < self.model_vocab_size:
-                    token_logits[idx] = logit
-            logits.append(token_logits)
-        
-        # Pad logits to exactly max_length
-        while len(logits) < self.max_length:
-            logits.append(torch.zeros(self.model_vocab_size))
-        logits = logits[:self.max_length]
+        """Get pre-processed sample - keep teacher logits sparse to save memory."""
+        sample = self.processed_samples[idx]
         
         return {
-            'input_ids': input_ids,
-            'attention_mask': attention_mask,
-            'labels': label_tensor,
-            'teacher_logits': torch.stack(logits)
+            'input_ids': sample['input_ids'],
+            'attention_mask': sample['attention_mask'],
+            'labels': sample['labels'],
+            'teacher_logits_sparse': sample['teacher_logits_sparse'],
+            'num_prompt_tokens': sample['num_prompt_tokens'],
+            'num_full_tokens': sample['num_full_tokens']
         }
 
 
@@ -199,10 +265,33 @@ def train(script_args, training_args):
 
     tokenizer = AutoTokenizer.from_pretrained(script_args.model_id)
     
-    # Data collator
-    data_collator = DataCollatorForLanguageModeling(
-        tokenizer=tokenizer,
-        mlm=False
+    # Custom data collator that handles teacher logits
+    class ChessDataCollator:
+        """Custom collator that keeps teacher logits sparse to save memory."""
+        
+        def __init__(self, max_length, vocab_size):
+            self.max_length = max_length
+            self.vocab_size = vocab_size
+        
+        def __call__(self, features):
+            # Handle list of lists (from NeuronTrainer batching)
+            if features and isinstance(features[0], list):
+                features = [item for sublist in features for item in sublist]
+            
+            # Stack tensors into batch
+            batch = {
+                'input_ids': torch.stack([f['input_ids'] for f in features]),
+                'attention_mask': torch.stack([f['attention_mask'] for f in features]),
+                'labels': torch.stack([f['labels'] for f in features]),
+                'teacher_logits_sparse': [f['teacher_logits_sparse'] for f in features],
+                'num_prompt_tokens': [f['num_prompt_tokens'] for f in features],
+                'num_full_tokens': [f['num_full_tokens'] for f in features]
+            }
+            return batch
+    
+    data_collator = ChessDataCollator(
+        max_length=script_args.max_length,
+        vocab_size=script_args.model_vocab_size
     )
     
     # Load chess dataset
@@ -214,6 +303,35 @@ def train(script_args, training_args):
         model_vocab_size=script_args.model_vocab_size
     )
     
+    # Debug: Print a sample to verify data processing
+    print("\n" + "="*80)
+    print("DEBUG: Sample data item")
+    print("="*80)
+    sample = train_dataset[0]
+    print(f"Sample keys: {sample.keys()}")
+    print(f"Input IDs shape: {sample['input_ids'].shape}")
+    print(f"Labels shape: {sample['labels'].shape}")
+    print(f"Teacher logits (sparse): {len(sample['teacher_logits_sparse'])} tokens")
+    print(f"Number of non-masked label positions: {(sample['labels'] != -100).sum().item()}")
+    print(f"Sample input (decoded): {tokenizer.decode(sample['input_ids'][:100])}")
+    label_tokens = sample['labels'][sample['labels'] != -100]
+    if len(label_tokens) > 0:
+        print(f"Sample labels (decoded): {tokenizer.decode(label_tokens)}")
+    
+    # Test the collator
+    print("\nTesting data collator with 2 samples...")
+    test_batch = [train_dataset[0], train_dataset[1]]
+    try:
+        collated = data_collator(test_batch)
+        print(f"Collated batch keys: {collated.keys()}")
+        print(f"Collated input_ids shape: {collated['input_ids'].shape}")
+        print(f"Collated teacher_logits_sparse: {len(collated['teacher_logits_sparse'])} samples")
+        print("✓ Data collator test passed!")
+    except Exception as e:
+        print(f"✗ Data collator test failed: {e}")
+        raise
+    print("="*80 + "\n")
+    
     # Load model
     print(f"Loading model: {script_args.model_id}")
     model = TrainingNeuronModelForCausalLM.from_pretrained(
@@ -223,7 +341,17 @@ def train(script_args, training_args):
     )
     
     # Initialize trainer
-    trainer = KnowledgeDistillationTrainer(
+    # Override the method that removes unused columns to keep teacher_logits
+    class KnowledgeDistillationTrainerWithLogits(KnowledgeDistillationTrainer):
+        def _remove_unused_columns(self, dataset, description):
+            """Override to keep teacher_logits column."""
+            # Don't remove any columns - we need teacher_logits
+            return dataset
+    
+    # Disable automatic column removal by setting remove_unused_columns=False
+    training_args.remove_unused_columns = False
+    
+    trainer = KnowledgeDistillationTrainerWithLogits(
         temperature=script_args.temperature,
         alpha=script_args.alpha,
         model=model,
@@ -235,14 +363,23 @@ def train(script_args, training_args):
     
     # Train
     print("Starting training...")
+    print(f"Temperature: {script_args.temperature}, Alpha: {script_args.alpha}")
+    print(f"Learning rate: {training_args.learning_rate}")
+    print(f"Batch size: {training_args.per_device_train_batch_size}")
+    print(f"Gradient accumulation steps: {training_args.gradient_accumulation_steps}")
+    print(f"Effective batch size: {training_args.per_device_train_batch_size * training_args.gradient_accumulation_steps}")
+    
     trainer.train()
     
     # Save final model
-    print(f"Saving final model to {script_args.output_model_path}")
+    print(f"\nSaving final model to {script_args.output_model_path}")
     trainer.save_model(script_args.output_model_path)
     tokenizer.save_pretrained(script_args.output_model_path)
     
+    print("\n" + "="*80)
     print("Training complete!")
+    print(f"Model saved to: {script_args.output_model_path}")
+    print("="*80)
 
 
 # =============================================================================
