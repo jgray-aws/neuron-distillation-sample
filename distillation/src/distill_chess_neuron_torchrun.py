@@ -92,6 +92,10 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
         shift_teacher_logits = torch.full_like(shift_logits, -1e10)
         
         # Fill in sparse teacher logits for each sample in batch
+        # Note: teacher_logits_sparse contains logits for the answer tokens only
+        # token_idx=0 corresponds to the first answer token (at position num_prompt in unshifted sequence)
+        # After shifting by 1, we need to place these at position num_prompt-1 in shift_teacher_logits
+        num_teacher_logits_filled = 0
         for batch_idx in range(batch_size):
             num_prompt = num_prompt_tokens_batch[batch_idx]
             num_full = num_full_tokens_batch[batch_idx]
@@ -100,12 +104,16 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
             
             for token_idx, sparse_logit in enumerate(sparse_logits):
                 if token_idx < num_answer:
-                    # Position in the shifted sequence (accounting for the shift)
-                    position = num_prompt + token_idx
-                    if position < seq_len:
+                    # The teacher logits at token_idx are for predicting the answer token at position (num_prompt + token_idx)
+                    # In the shifted sequence, this corresponds to position (num_prompt + token_idx - 1)
+                    # But we need to be careful: shift_logits[..., i, :] predicts labels[..., i+1]
+                    # So teacher logits for answer token at original position P should go at shift position P-1
+                    position = num_prompt + token_idx - 1
+                    if 0 <= position < seq_len:
                         for vocab_idx, logit_val in zip(sparse_logit['indices'], sparse_logit['logits']):
                             if vocab_idx < vocab_size:
                                 shift_teacher_logits[batch_idx, position, vocab_idx] = logit_val
+                                num_teacher_logits_filled += 1
         
         # Compute soft loss with temperature scaling
         student_soft = F.log_softmax(shift_logits / self.temperature, dim=-1)
@@ -124,6 +132,15 @@ class KnowledgeDistillationTrainer(NeuronTrainer):
         
         # Combined loss
         total_loss = self.alpha * soft_loss + (1 - self.alpha) * hard_loss
+        
+        # Log loss components periodically (every 10 steps)
+        if hasattr(self, 'state') and self.state.global_step % 10 == 0:
+            print(f"\n[Step {self.state.global_step}] Loss breakdown:")
+            print(f"  Hard loss: {hard_loss.item():.4f}")
+            print(f"  Soft loss: {soft_loss.item():.4f}")
+            print(f"  Total loss: {total_loss.item():.4f}")
+            print(f"  Num masked tokens: {mask.sum().item():.0f}")
+            print(f"  Teacher logits filled: {num_teacher_logits_filled}")
         
         return (total_loss, student_outputs) if return_outputs else total_loss
 
@@ -369,7 +386,20 @@ def train(script_args, training_args):
     print(f"Gradient accumulation steps: {training_args.gradient_accumulation_steps}")
     print(f"Effective batch size: {training_args.per_device_train_batch_size * training_args.gradient_accumulation_steps}")
     
+    # Compute initial model checksum to verify training updates the model
+    initial_param_sum = sum(p.sum().item() for p in model.parameters() if p.requires_grad)
+    print(f"\nInitial model parameter sum: {initial_param_sum:.6f}")
+    
     trainer.train()
+    
+    # Verify model was updated
+    final_param_sum = sum(p.sum().item() for p in model.parameters() if p.requires_grad)
+    print(f"\nFinal model parameter sum: {final_param_sum:.6f}")
+    print(f"Parameter change: {abs(final_param_sum - initial_param_sum):.6f}")
+    if abs(final_param_sum - initial_param_sum) < 1e-6:
+        print("⚠️  WARNING: Model parameters did not change significantly!")
+    else:
+        print("✓ Model parameters were updated during training")
     
     # Save final model
     print(f"\nSaving final model to {script_args.output_model_path}")
