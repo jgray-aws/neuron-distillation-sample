@@ -1,0 +1,3474 @@
+[
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1r4k1/4nppp/8/4Pb2/8/1P5P/r1PR4/3R3K w - - 0 27\". Which move is better? MoveA:d2d8, Adjust the piece to a key area, where it holds more influence over the board. TacticA: d2d8 b8d8 d1d8 Checkmate!  MoveB:d2d7, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: d2d7 f5d7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d2d8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1r4k1/4nppp/8/4Pb2/8/1P5P/r1PR4/3R3K w - - 0 27\". Which move is better? MoveA:d2d8, Adjust the piece to a key area, where it holds more influence over the board. TacticA: d2d8 b8d8 d1d8 Checkmate!  MoveB:d2d7, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: d2d7 f5d7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.82978820800781
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            89.5914077758789
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.66938781738281
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"7r/pp4k1/8/3p1pp1/3N1q2/2P4P/PP4Q1/6K1 w - - 0 39\". Which move is better? MoveA:d4c6, Transfer the piece to a lively area, boosting its impact on the board. TacticA: d4c6 b7c6 Trade the lower value piece for a higher value piece.  MoveB:d4e6, Move the piece to a pivotal position, providing it with greater board command. TacticB: d4e6 g7f6 e6f4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:d4e6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"7r/pp4k1/8/3p1pp1/3N1q2/2P4P/PP4Q1/6K1 w - - 0 39\". Which move is better? MoveA:d4c6, Transfer the piece to a lively area, boosting its impact on the board. TacticA: d4c6 b7c6 Trade the lower value piece for a higher value piece.  MoveB:d4e6, Move the piece to a pivotal position, providing it with greater board command. TacticB: d4e6 g7f6 e6f4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.35142517089844
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            87.93865203857422,
+            88.64646911621094
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.168853759765625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4k2r/p4ppp/2p3P1/2b1P2n/8/P1N5/1P1rQ1PP/R4R1K b k - 0 20\". Which move is better? MoveA:d2e2, Trade a lesser piece for a higher-value piece to gain a positional advantage. TacticA: d2e2 g6f7 e8d7 c3e2 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: h5g3 h2g3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:h5g3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4k2r/p4ppp/2p3P1/2b1P2n/8/P1N5/1P1rQ1PP/R4R1K b k - 0 20\". Which move is better? MoveA:d2e2, Trade a lesser piece for a higher-value piece to gain a positional advantage. TacticA: d2e2 g6f7 e8d7 c3e2 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: h5g3 h2g3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.15515899658203
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            87.65812683105469,
+            87.13819885253906
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.765037536621094
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2r3k1/rb3pp1/p1q1p2p/2N5/3P4/p1PQP3/5PPP/3R1RK1 b - - 3 25\". Which move is better? MoveA:g8f8, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: g8f8 e3e4 c6d6 e4e5 d6c6 f2f3   MoveB:c6g2, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: c6g2 Checkmate! ",
+    "expected_output": "MoveB:c6g2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2r3k1/rb3pp1/p1q1p2p/2N5/3P4/p1PQP3/5PPP/3R1RK1 b - - 3 25\". Which move is better? MoveA:g8f8, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: g8f8 e3e4 c6d6 e4e5 d6c6 f2f3   MoveB:c6g2, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: c6g2 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.87356567382812
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            92.85955047607422
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.93080520629883
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/5Bpk/7p/pp6/qP6/P1Qb2P1/5PKP/8 b - - 1 30\". Which move is better? MoveA:a4d1, Plant the piece in a dominant spot, expanding its control over the board. TacticA: a4d1 f7b3 d1f1 g2f3 f1e2 f3g2   MoveB:a5b4, Another pawn is taken, resulting in a changed pawn structure. TacticB: a5b4 c3d3 h7h8 d3d8 h8h7 d8g8 Checkmate! ",
+    "expected_output": "MoveA:a4d1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/5Bpk/7p/pp6/qP6/P1Qb2P1/5PKP/8 b - - 1 30\". Which move is better? MoveA:a4d1, Plant the piece in a dominant spot, expanding its control over the board. TacticA: a4d1 f7b3 d1f1 g2f3 f1e2 f3g2   MoveB:a5b4, Another pawn is taken, resulting in a changed pawn structure. TacticB: a5b4 c3d3 h7h8 d3d8 h8h7 d8g8 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.72346496582031
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            90.71589660644531
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.18307113647461
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2qk1nr/1pp2p1p/p1p3p1/4b3/4P1b1/2N1BN2/PPP2PPP/R2QK2R w KQkq - 0 9\". Which move is better? MoveA:c3e2, Set the piece in a more potent location, giving it superior board control. TacticA: c3e2 e5b2 d1b1 b2a1 Trade the lower value piece for a higher value piece.  MoveB:f3g5, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3g5 g4d1 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:c3e2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2qk1nr/1pp2p1p/p1p3p1/4b3/4P1b1/2N1BN2/PPP2PPP/R2QK2R w KQkq - 0 9\". Which move is better? MoveA:c3e2, Set the piece in a more potent location, giving it superior board control. TacticA: c3e2 e5b2 d1b1 b2a1 Trade the lower value piece for a higher value piece.  MoveB:f3g5, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3g5 g4d1 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            85.29462432861328
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            86.57249450683594,
+            86.93195343017578
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.00596618652344
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2q1rk1/ppp1bppp/3p1n2/5NB1/4P3/2P1N1Q1/PP3PPP/R4bK1 w - - 0 15\". Which move is better? MoveA:g1f1, Replace the lower-value piece with a more valuable one to secure an advantage. TacticA: g1f1 g8h8 g5h6 g7g6 h6g7 h8g8   MoveB:e3d5, Move the piece to an aggressive spot, enhancing its control over the board. TacticB: e3d5 f6e4 d5e7 d8e7 f5e7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:e3d5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2q1rk1/ppp1bppp/3p1n2/5NB1/4P3/2P1N1Q1/PP3PPP/R4bK1 w - - 0 15\". Which move is better? MoveA:g1f1, Replace the lower-value piece with a more valuable one to secure an advantage. TacticA: g1f1 g8h8 g5h6 g7g6 h6g7 h8g8   MoveB:e3d5, Move the piece to an aggressive spot, enhancing its control over the board. TacticB: e3d5 f6e4 d5e7 d8e7 f5e7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.22705841064453
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            90.27763366699219
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.47775650024414
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3rb1k1/5p2/pb3q1p/1p2NBp1/8/2Pn1QB1/PP3PPP/4R1K1 b - - 8 29\". Which move is better? MoveA:d3e1, Exchange a minor piece for a major one, and gain a tactical advantage. TacticA: d3e1 f5h7 g8g7 f3f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:b6f2, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: b6f2 g1h1 f2g3 e5g4 f6c6 f3c6  ",
+    "expected_output": "MoveA:d3e1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3rb1k1/5p2/pb3q1p/1p2NBp1/8/2Pn1QB1/PP3PPP/4R1K1 b - - 8 29\". Which move is better? MoveA:d3e1, Exchange a minor piece for a major one, and gain a tactical advantage. TacticA: d3e1 f5h7 g8g7 f3f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:b6f2, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: b6f2 g1h1 f2g3 e5g4 f6c6 f3c6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.74708557128906
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.60961151123047
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.276458740234375
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5r2/7k/p5Rp/2nBr3/1pP1p3/1P6/P6P/1K4R1 w - - 6 43\". Which move is better? MoveA:d5g8, Shift the piece to a proactive position, where it exerts more influence. TacticA: d5g8 f8g8 g6g8 e5e7 g8g3 e4e3   MoveB:g6h6, Lose a piece to clear a line or diagonal near the opposing king TacticB: g6h6 h7h6 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d5g8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5r2/7k/p5Rp/2nBr3/1pP1p3/1P6/P6P/1K4R1 w - - 6 43\". Which move is better? MoveA:d5g8, Shift the piece to a proactive position, where it exerts more influence. TacticA: d5g8 f8g8 g6g8 e5e7 g8g3 e4e3   MoveB:g6h6, Lose a piece to clear a line or diagonal near the opposing king TacticB: g6h6 h7h6 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            77.85054016113281
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.79995727539062,
+            88.4949951171875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.393436431884766
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/2k1b1pp/8/pp2R3/8/1KP5/5rPP/7R b - - 0 32\". Which move is better? MoveA:a5a4, The movement of a black pawn creates additional room on the queenside, giving black more control over piece movement. TacticA: a5a4 Checkmate!  MoveB:e7f6, Displace the piece to a more promising position, strengthening its board authority. TacticB: e7f6 e5b5 c7c6 b5a5 f2g2 a5a6  ",
+    "expected_output": "MoveA:a5a4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/2k1b1pp/8/pp2R3/8/1KP5/5rPP/7R b - - 0 32\". Which move is better? MoveA:a5a4, The movement of a black pawn creates additional room on the queenside, giving black more control over piece movement. TacticA: a5a4 Checkmate!  MoveB:e7f6, Displace the piece to a more promising position, strengthening its board authority. TacticB: e7f6 e5b5 c7c6 b5a5 f2g2 a5a6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.81362915039062
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.99366760253906
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.226314544677734
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4r1k1/pp3ppp/3q1n2/8/2r4N/1Q1n4/PP2RPPP/1K2R3 w - - 0 25\". Which move is better? MoveA:h4g6, Relocate the piece to a dynamic square, it's more influential on the board. TacticA: h4g6 e8e2 e1d1 d6d4 g6e7 g8f8   MoveB:a2a3, When a white pawn advances, it widens the queenside, allowing white greater liberty in moving pieces. TacticB: a2a3 e8e2 e1e2 c4c1 b1a2 d3b4  ",
+    "expected_output": "MoveB:a2a3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4r1k1/pp3ppp/3q1n2/8/2r4N/1Q1n4/PP2RPPP/1K2R3 w - - 0 25\". Which move is better? MoveA:h4g6, Relocate the piece to a dynamic square, it's more influential on the board. TacticA: h4g6 e8e2 e1d1 d6d4 g6e7 g8f8   MoveB:a2a3, When a white pawn advances, it widens the queenside, allowing white greater liberty in moving pieces. TacticB: a2a3 e8e2 e1e2 c4c1 b1a2 d3b4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.20210266113281
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.6572494506836,
+            87.40117645263672
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.12003707885742
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"rn4k1/ppp2ppp/8/4r3/2B5/P1P2P2/3R1P1P/5RK1 w - - 0 16\". Which move is better? MoveA:d2d8, Shift the piece to a proactive position, where it exerts more influence. TacticA: d2d8 e5e8 d8e8 Checkmate!  MoveB:c4f7, Offer a piece to open a file or diagonal adjacent to the opposing king TacticB: c4f7 g8f7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d2d8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"rn4k1/ppp2ppp/8/4r3/2B5/P1P2P2/3R1P1P/5RK1 w - - 0 16\". Which move is better? MoveA:d2d8, Shift the piece to a proactive position, where it exerts more influence. TacticA: d2d8 e5e8 d8e8 Checkmate!  MoveB:c4f7, Offer a piece to open a file or diagonal adjacent to the opposing king TacticB: c4f7 g8f7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.7908706665039
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            87.34028625488281,
+            86.41067504882812
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.9406852722168
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3n4/1b3pk1/p5p1/1pr3B1/8/1B3N1P/Pb2RPP1/6K1 b - - 9 30\". Which move is better? MoveA:b2f6, Move the piece to a pivotal position, providing it with greater board command. TacticA: b2f6 g5e3 c5c8 f3d4 b7a8 g2g4   MoveB:d8e6, Move the piece to a pivotal position, providing it with greater board command. TacticB: d8e6 g5e3 b2c1 e3c5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:b2f6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3n4/1b3pk1/p5p1/1pr3B1/8/1B3N1P/Pb2RPP1/6K1 b - - 9 30\". Which move is better? MoveA:b2f6, Move the piece to a pivotal position, providing it with greater board command. TacticA: b2f6 g5e3 c5c8 f3d4 b7a8 g2g4   MoveB:d8e6, Move the piece to a pivotal position, providing it with greater board command. TacticB: d8e6 g5e3 b2c1 e3c5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.13555145263672
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            88.0975112915039
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.4618034362793
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r2k1/1p3ppp/p1n5/8/8/1P2P3/2rNKPPP/2RR4 b - - 2 24\". Which move is better? MoveA:c6b4, Move the piece to a pivotal position, providing it with greater board command. TacticA: c6b4 c1c2 b4c2 Trade the lower value piece for a higher value piece.  MoveB:g8f8, Reassign the piece to a central area, where it exercises more control over the board. TacticB: g8f8 c1c2 d8d7 d1c1 d7d8 c2c6  ",
+    "expected_output": "MoveA:c6b4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r2k1/1p3ppp/p1n5/8/8/1P2P3/2rNKPPP/2RR4 b - - 2 24\". Which move is better? MoveA:c6b4, Move the piece to a pivotal position, providing it with greater board command. TacticA: c6b4 c1c2 b4c2 Trade the lower value piece for a higher value piece.  MoveB:g8f8, Reassign the piece to a central area, where it exercises more control over the board. TacticB: g8f8 c1c2 d8d7 d1c1 d7d8 c2c6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.15177917480469
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            96.14620971679688
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.92202377319336
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2q1rk1/4npp1/3b1p1p/1ppN1Q2/8/1B6/PP3PPP/R3R1K1 w - - 1 20\". Which move is better? MoveA:f5e4, Shift the piece to a proactive position, where it exerts more influence. TacticA: f5e4 e7c6 d5f6 d8f6 b3c2 g7g6   MoveB:f5c8, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: f5c8 e7c8 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:f5e4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2q1rk1/4npp1/3b1p1p/1ppN1Q2/8/1B6/PP3PPP/R3R1K1 w - - 1 20\". Which move is better? MoveA:f5e4, Shift the piece to a proactive position, where it exerts more influence. TacticA: f5e4 e7c6 d5f6 d8f6 b3c2 g7g6   MoveB:f5c8, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: f5c8 e7c8 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.50724029541016
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.05296325683594,
+            89.9755859375
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.623138427734375
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r4/1bq1bpk1/p1p2n2/4p1B1/4P3/P1N5/1PP1Q1PP/5R1K w - - 1 22\". Which move is better? MoveA:e2f3, Reposition the piece to an assertive square, where it governs more of the board. TacticA: e2f3 c7d6 c3e2 g7g6 g5h4 b7c8   MoveB:g5h6, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g5h6 g7h6 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:e2f3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r4/1bq1bpk1/p1p2n2/4p1B1/4P3/P1N5/1PP1Q1PP/5R1K w - - 1 22\". Which move is better? MoveA:e2f3, Reposition the piece to an assertive square, where it governs more of the board. TacticA: e2f3 c7d6 c3e2 g7g6 g5h4 b7c8   MoveB:g5h6, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g5h6 g7h6 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.27257537841797
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.98837280273438,
+            89.09998321533203
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.18770980834961
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"7r/8/1p1N1k2/p3R3/2P3p1/1P1P1pK1/2P5/8 b - - 1 37\". Which move is better? MoveA:f6e5, Swap the lesser piece for a greater one to gain an advantage. TacticA: f6e5 d6f7 e5d4 f7h8 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: h8g8 e5b5 g8f8 d6e4 f6g6 b5b6  ",
+    "expected_output": "MoveA:f6e5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"7r/8/1p1N1k2/p3R3/2P3p1/1P1P1pK1/2P5/8 b - - 1 37\". Which move is better? MoveA:f6e5, Swap the lesser piece for a greater one to gain an advantage. TacticA: f6e5 d6f7 e5d4 f7h8 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: h8g8 e5b5 g8f8 d6e4 f6g6 b5b6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.58583068847656
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            99.25501251220703
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.33848190307617
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"rn1q1rk1/5pp1/2p4p/1p2P3/pn2N1b1/3Q1NB1/PPB2PPP/2b2RK1 w - - 2 18\". Which move is better? MoveA:e4d6, Place the piece in a commanding position, maximizing its control on the board. TacticA: e4d6 b4d3 Trade the lower value piece for a higher value piece.  MoveB:e4f6, Marshall the piece to a better square, extending its control over the board. TacticB: e4f6 g8h8 d3h7 Checkmate! ",
+    "expected_output": "MoveB:e4f6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"rn1q1rk1/5pp1/2p4p/1p2P3/pn2N1b1/3Q1NB1/PPB2PPP/2b2RK1 w - - 2 18\". Which move is better? MoveA:e4d6, Place the piece in a commanding position, maximizing its control on the board. TacticA: e4d6 b4d3 Trade the lower value piece for a higher value piece.  MoveB:e4f6, Marshall the piece to a better square, extending its control over the board. TacticB: e4f6 g8h8 d3h7 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.19080352783203
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            89.09117889404297
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.34254455566406
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1r3rk1/p4ppp/4p3/1Bq1P3/8/PQN3P1/1P3P1P/R5K1 b - - 0 24\". Which move is better? MoveA:c5f2, Lose a piece to create an opening on a file or diagonal near the rival king TacticA: c5f2 g1f2 Trade the lower value piece for a higher value piece.  MoveB:a7a6, A black pawn advance creates added space on the queenside, giving black the ability to maneuver pieces with greater freedom. TacticB: a7a6 a3a4 c5e5 b3b4 h7h6 a4a5  ",
+    "expected_output": "MoveB:a7a6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1r3rk1/p4ppp/4p3/1Bq1P3/8/PQN3P1/1P3P1P/R5K1 b - - 0 24\". Which move is better? MoveA:c5f2, Lose a piece to create an opening on a file or diagonal near the rival king TacticA: c5f2 g1f2 Trade the lower value piece for a higher value piece.  MoveB:a7a6, A black pawn advance creates added space on the queenside, giving black the ability to maneuver pieces with greater freedom. TacticB: a7a6 a3a4 c5e5 b3b4 h7h6 a4a5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.31658172607422
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            96.6076889038086
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.64040756225586
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/R1n1r1kp/2P3p1/8/3N1Pp1/2KBP3/7r/8 w - - 2 37\". Which move is better? MoveA:a7a8, Advance the piece to a strategic square, optimizing its control over the board. TacticA: a7a8 c7a8 Trade the lower value piece for a higher value piece.  MoveB:d4e6, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d4e6 e7e6 a7c7 g7h6 f4f5 e6f6  ",
+    "expected_output": "MoveB:d4e6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/R1n1r1kp/2P3p1/8/3N1Pp1/2KBP3/7r/8 w - - 2 37\". Which move is better? MoveA:a7a8, Advance the piece to a strategic square, optimizing its control over the board. TacticA: a7a8 c7a8 Trade the lower value piece for a higher value piece.  MoveB:d4e6, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d4e6 e7e6 a7c7 g7h6 f4f5 e6f6  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.95864868164062
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            91.15599060058594
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.006065368652344
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r4/p2qNkpp/1pbPrp2/2p1p3/P1Q1P3/6P1/1P3P1P/3RR1K1 w - - 10 29\". Which move is better? MoveA:b2b3, By pushing a white pawn forward, it opens up the queenside, granting more freedom to maneuver other pieces. TacticA: b2b3 d8e8 f2f4 e5f4 e7c6 d7c6   MoveB:e7g8, Reassign the piece to a central area, where it exercises more control over the board. TacticB: e7g8 f7g8 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:b2b3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r4/p2qNkpp/1pbPrp2/2p1p3/P1Q1P3/6P1/1P3P1P/3RR1K1 w - - 10 29\". Which move is better? MoveA:b2b3, By pushing a white pawn forward, it opens up the queenside, granting more freedom to maneuver other pieces. TacticA: b2b3 d8e8 f2f4 e5f4 e7c6 d7c6   MoveB:e7g8, Reassign the piece to a central area, where it exercises more control over the board. TacticB: e7g8 f7g8 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.54498291015625
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            92.19210052490234,
+            90.57975769042969
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.55599594116211
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r3r1k1/3qbp2/1R2n1pQ/p2NP3/1P1B4/P7/5PPP/3R2K1 b - - 0 30\". Which move is better? MoveA:a8a6, Transfer the piece to a lively area, boosting its impact on the board. TacticA: a8a6 d5e7 d7e7 h2h3 a6b6 d4b6 Trade the lower value piece for a higher value piece.  MoveB:a5b4, A pawn overtakes another, restructuring the pawn formation. TacticB: a5b4 b6d6 d7a4 d1e1 e7g5 d5f6  ",
+    "expected_output": "MoveB:a5b4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r3r1k1/3qbp2/1R2n1pQ/p2NP3/1P1B4/P7/5PPP/3R2K1 b - - 0 30\". Which move is better? MoveA:a8a6, Transfer the piece to a lively area, boosting its impact on the board. TacticA: a8a6 d5e7 d7e7 h2h3 a6b6 d4b6 Trade the lower value piece for a higher value piece.  MoveB:a5b4, A pawn overtakes another, restructuring the pawn formation. TacticB: a5b4 b6d6 d7a4 d1e1 e7g5 d5f6  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.556640625
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.5816421508789,
+            90.27496337890625
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.31835174560547
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1r6/p6k/3p2p1/1qpQ1bP1/8/2P5/P7/K2R4 w - - 0 31\". Which move is better? MoveA:d5f7, Advance the piece to a strategic square, optimizing its control over the board. TacticA: d5f7 h7h8 d1h1 f5h3 h1h3 Checkmate!  MoveB:d5g8, Position the piece more actively, giving it greater board command. TacticB: d5g8 h7g8 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d5f7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1r6/p6k/3p2p1/1qpQ1bP1/8/2P5/P7/K2R4 w - - 0 31\". Which move is better? MoveA:d5f7, Advance the piece to a strategic square, optimizing its control over the board. TacticA: d5f7 h7h8 d1h1 f5h3 h1h3 Checkmate!  MoveB:d5g8, Position the piece more actively, giving it greater board command. TacticB: d5g8 h7g8 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.8094711303711
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            92.93617248535156
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.06272506713867
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"6k1/6p1/7p/5p2/4p3/1R1rP2P/5PP1/6K1 w - - 1 34\". Which move is better? MoveA:b3b8, Marshall the piece to a better square, extending its control over the board. TacticA: b3b8 g8f7 g2g3 f7e6 g3g4 f5f4   MoveB:b3c3, Displace the piece to a more promising position, strengthening its board authority. TacticB: b3c3 d3c3 g2g4 g8f7 g1h2 f7f6  ",
+    "expected_output": "MoveA:b3b8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"6k1/6p1/7p/5p2/4p3/1R1rP2P/5PP1/6K1 w - - 1 34\". Which move is better? MoveA:b3b8, Marshall the piece to a better square, extending its control over the board. TacticA: b3b8 g8f7 g2g3 f7e6 g3g4 f5f4   MoveB:b3c3, Displace the piece to a more promising position, strengthening its board authority. TacticB: b3c3 d3c3 g2g4 g8f7 g1h2 f7f6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.70093536376953
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            91.8162612915039,
+            91.38348388671875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.927886962890625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"6k1/1bp3p1/8/1p1p1pP1/1P3P1Q/1B2q3/6RK/2r5 w - - 4 49\". Which move is better? MoveA:h4h8, Plant the piece in a dominant spot, expanding its control over the board. TacticA: h4h8 g8h8 Trade the lower value piece for a higher value piece.  MoveB:g5g6, Advancing a white pawn results in more space on the kingside, enhancing the potential for piece mobility. TacticB: g5g6 g8f8 h4h8 f8e7 h8g7 e7e6  ",
+    "expected_output": "MoveB:g5g6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"6k1/1bp3p1/8/1p1p1pP1/1P3P1Q/1B2q3/6RK/2r5 w - - 4 49\". Which move is better? MoveA:h4h8, Plant the piece in a dominant spot, expanding its control over the board. TacticA: h4h8 g8h8 Trade the lower value piece for a higher value piece.  MoveB:g5g6, Advancing a white pawn results in more space on the kingside, enhancing the potential for piece mobility. TacticB: g5g6 g8f8 h4h8 f8e7 h8g7 e7e6  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.01813507080078
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.0575180053711,
+            87.25277709960938
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.51389694213867
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5bk1/p4pp1/1p4p1/8/1p6/1Qq1B1P1/P1P1rP1P/2R3K1 w - - 6 25\". Which move is better? MoveA:b3f7, Give up a piece to open a path or line near the opponent's king TacticA: b3f7 g8f7 Trade the lower value piece for a higher value piece.  MoveB:g1f1, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g1f1 e2e3 f2e3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:g1f1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5bk1/p4pp1/1p4p1/8/1p6/1Qq1B1P1/P1P1rP1P/2R3K1 w - - 6 25\". Which move is better? MoveA:b3f7, Give up a piece to open a path or line near the opponent's king TacticA: b3f7 g8f7 Trade the lower value piece for a higher value piece.  MoveB:g1f1, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g1f1 e2e3 f2e3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.499267578125
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            95.89033508300781
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.846717834472656
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5Q2/p2q1Bpk/1p5p/2p4n/6P1/5P1K/8/8 w - - 0 47\". Which move is better? MoveA:f7g8, Adjust the piece to a key area, where it holds more influence over the board. TacticA: f7g8 h7g6 h3h4 h5f6 g8b3 d7d2   MoveB:f8g7, Offer a piece to unblock a file or diagonal around the enemy king TacticB: f8g7 h5g7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:f7g8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5Q2/p2q1Bpk/1p5p/2p4n/6P1/5P1K/8/8 w - - 0 47\". Which move is better? MoveA:f7g8, Adjust the piece to a key area, where it holds more influence over the board. TacticA: f7g8 h7g6 h3h4 h5f6 g8b3 d7d2   MoveB:f8g7, Offer a piece to unblock a file or diagonal around the enemy king TacticB: f8g7 h5g7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.68453216552734
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            88.85664367675781
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.903419494628906
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r1k2/pp6/8/2Pqp2p/PP1b4/5P2/3Q2PP/1RK4R b - - 8 33\". Which move is better? MoveA:f8e8, Settle the piece in a more energetic spot, where it has better board supervision. TacticA: f8e8 d2c2 d5c6 h1e1 a7a5 e1e2   MoveB:d5c4, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d5c4 c1d1 d4e3 d2d8 f8f7 d8d7  ",
+    "expected_output": "MoveB:d5c4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r1k2/pp6/8/2Pqp2p/PP1b4/5P2/3Q2PP/1RK4R b - - 8 33\". Which move is better? MoveA:f8e8, Settle the piece in a more energetic spot, where it has better board supervision. TacticA: f8e8 d2c2 d5c6 h1e1 a7a5 e1e2   MoveB:d5c4, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d5c4 c1d1 d4e3 d2d8 f8f7 d8d7  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.27751159667969
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            87.8189926147461,
+            90.48981475830078
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.40653991699219
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5rk1/3p1pq1/6pQ/8/1r3R2/6P1/6KP/5R2 w - - 2 45\". Which move is better? MoveA:h6g5, Adjust the piece to a key area, where it holds more influence over the board. TacticA: h6g5 b4b2 g2h3 b2d2 f1f2 d2b2   MoveB:f4f7, Surrender a piece to free a path or diagonal near the rival king TacticB: f4f7 b4b2 g2h1 g7h6 f7f8 h6f8  ",
+    "expected_output": "MoveA:h6g5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5rk1/3p1pq1/6pQ/8/1r3R2/6P1/6KP/5R2 w - - 2 45\". Which move is better? MoveA:h6g5, Adjust the piece to a key area, where it holds more influence over the board. TacticA: h6g5 b4b2 g2h3 b2d2 f1f2 d2b2   MoveB:f4f7, Surrender a piece to free a path or diagonal near the rival king TacticB: f4f7 b4b2 g2h1 g7h6 f7f8 h6f8  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.61260223388672
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            91.97139739990234,
+            89.07196044921875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.30845642089844
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2rq1rk1/p4pp1/1p1bpn1p/4B3/2P5/1P1B1P2/P1Q2P1P/3R1RK1 b - - 1 18\". Which move is better? MoveA:f8e8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: f8e8 e5d6 d8d6 d3h7 f6h7 d1d6 Trade the lower value piece for a higher value piece.  MoveB:f6e8, Transfer the piece to a lively area, boosting its impact on the board. TacticB: f6e8 f3f4 d8c7 c2e2 d6e5 f4e5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:f6e8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2rq1rk1/p4pp1/1p1bpn1p/4B3/2P5/1P1B1P2/P1Q2P1P/3R1RK1 b - - 1 18\". Which move is better? MoveA:f8e8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: f8e8 e5d6 d8d6 d3h7 f6h7 d1d6 Trade the lower value piece for a higher value piece.  MoveB:f6e8, Transfer the piece to a lively area, boosting its impact on the board. TacticB: f6e8 f3f4 d8c7 c2e2 d6e5 f4e5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.79618835449219
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            91.47777557373047
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.436134338378906
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2r5/6kp/3pB1p1/p3R2n/P4p2/1P1R3P/6P1/6K1 b - - 0 37\". Which move is better? MoveA:d6e5, Trade a lower-value piece for one of higher value to gain the upper hand. TacticA: d6e5 e6c8 Trade the lower value piece for a higher value piece.  MoveB:c8c1, Adjust the piece to a key area, where it holds more influence over the board. TacticB: c8c1 g1f2 d6e5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:c8c1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2r5/6kp/3pB1p1/p3R2n/P4p2/1P1R3P/6P1/6K1 b - - 0 37\". Which move is better? MoveA:d6e5, Trade a lower-value piece for one of higher value to gain the upper hand. TacticA: d6e5 e6c8 Trade the lower value piece for a higher value piece.  MoveB:c8c1, Adjust the piece to a key area, where it holds more influence over the board. TacticB: c8c1 g1f2 d6e5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.29680633544922
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            92.7625961303711
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            55.204254150390625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1r1q1rk1/p1pp1pbp/b1n1p1p1/4P3/1pNP4/PQP2N2/1P3PPP/R1B1R1K1 b - - 0 14\". Which move is better? MoveA:b4a3, The pawn's move captures its opponent, altering the structure. TacticA: b4a3 b3a3 a6c4 c1g5 f7f6 a3c5   MoveB:b4c3, One pawn captures another, revising the pawn setup. TacticB: b4c3 b3c3 c6e7 c1g5 a6b7 a1c1  ",
+    "expected_output": "MoveA:b4a3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1r1q1rk1/p1pp1pbp/b1n1p1p1/4P3/1pNP4/PQP2N2/1P3PPP/R1B1R1K1 b - - 0 14\". Which move is better? MoveA:b4a3, The pawn's move captures its opponent, altering the structure. TacticA: b4a3 b3a3 a6c4 c1g5 f7f6 a3c5   MoveB:b4c3, One pawn captures another, revising the pawn setup. TacticB: b4c3 b3c3 c6e7 c1g5 a6b7 a1c1  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.44136810302734
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.51461791992188,
+            86.29266357421875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.82099914550781
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r2k1/p3qpp1/2pr3p/4Q3/3P4/P5PP/5PK1/3R1R2 b - - 0 32\". Which move is better? MoveA:g8f8, Move the piece to a pivotal position, providing it with greater board command. TacticA: g8f8 e5e7 f8e7 Trade the lower value piece for a higher value piece.  MoveB:g8h7, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: g8h7 e5e7 d8d7 e7e8 d6d5 d1e1  ",
+    "expected_output": "MoveA:g8f8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r2k1/p3qpp1/2pr3p/4Q3/3P4/P5PP/5PK1/3R1R2 b - - 0 32\". Which move is better? MoveA:g8f8, Move the piece to a pivotal position, providing it with greater board command. TacticA: g8f8 e5e7 f8e7 Trade the lower value piece for a higher value piece.  MoveB:g8h7, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: g8h7 e5e7 d8d7 e7e8 d6d5 d1e1  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.11991882324219
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.39881134033203
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.643733978271484
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2R5/6p1/p5rk/3pK3/2b5/5Rn1/P7/8 w - - 2 49\". Which move is better? MoveA:c8d8, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: c8d8 g6g5 e5d6 g3e4 d6d7 g5f5   MoveB:f3f6, Adjust the piece to a key area, where it holds more influence over the board. TacticB: f3f6 g6f6 c8c4 d5c4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:c8d8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2R5/6p1/p5rk/3pK3/2b5/5Rn1/P7/8 w - - 2 49\". Which move is better? MoveA:c8d8, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: c8d8 g6g5 e5d6 g3e4 d6d7 g5f5   MoveB:f3f6, Adjust the piece to a key area, where it holds more influence over the board. TacticB: f3f6 g6f6 c8c4 d5c4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.04879760742188
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            88.87467956542969
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.39518356323242
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/3k4/8/8/7p/p6P/6r1/6BK w - - 0 39\". Which move is better? MoveA:h1g2, Trade a minor piece for a major piece to gain strategic leverage. TacticA: h1g2 d7c7 g2f3 c7d6 g1d4 d6e7   MoveB:g1a7, Redeploy the piece to a vibrant location, increasing its board dominance. TacticB: g1a7 g2d2 a7b8 d7e6 b8h2 a3a2  ",
+    "expected_output": "MoveA:h1g2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/3k4/8/8/7p/p6P/6r1/6BK w - - 0 39\". Which move is better? MoveA:h1g2, Trade a minor piece for a major piece to gain strategic leverage. TacticA: h1g2 d7c7 g2f3 c7d6 g1d4 d6e7   MoveB:g1a7, Redeploy the piece to a vibrant location, increasing its board dominance. TacticB: g1a7 g2d2 a7b8 d7e6 b8h2 a3a2  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.7973403930664
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            88.98693084716797
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.04231262207031
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"7r/1k2np2/p5p1/1p2pPP1/P3P1KP/1BPr3R/5b2/R1B5 b - - 2 24\". Which move is better? MoveA:e7f5, Remove a piece to free up a file or diagonal close to the enemy king TacticA: e7f5 h3d3 h8h4 g4f3 f2c5 b3d5   MoveB:h8h4, Give up a piece to gain access to a file or diagonal near the enemy king TacticB: h8h4 h3h4 d3g3 Checkmate! ",
+    "expected_output": "MoveB:h8h4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"7r/1k2np2/p5p1/1p2pPP1/P3P1KP/1BPr3R/5b2/R1B5 b - - 2 24\". Which move is better? MoveA:e7f5, Remove a piece to free up a file or diagonal close to the enemy king TacticA: e7f5 h3d3 h8h4 g4f3 f2c5 b3d5   MoveB:h8h4, Give up a piece to gain access to a file or diagonal near the enemy king TacticB: h8h4 h3h4 d3g3 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            84.44668579101562
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.09920501708984
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.514644622802734
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r1b1r1k1/p4ppp/1pp3q1/7n/2p1NP2/2P1Q3/PP4PP/R1B1R1K1 w - - 1 22\". Which move is better? MoveA:e4f6, Displace the piece to a more promising position, strengthening its board authority. TacticA: e4f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:e4d6, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: e4d6 e8e3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:e4f6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r1b1r1k1/p4ppp/1pp3q1/7n/2p1NP2/2P1Q3/PP4PP/R1B1R1K1 w - - 1 22\". Which move is better? MoveA:e4f6, Displace the piece to a more promising position, strengthening its board authority. TacticA: e4f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:e4d6, Relocate the piece to a dynamic square, it's more influential on the board. TacticB: e4d6 e8e3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.61416625976562
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            89.95764923095703
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.08156967163086
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2QQ4/1p5k/p7/8/4pn2/3q1p2/PP5N/2K5 b - - 0 41\". Which move is better? MoveA:h7g7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: h7g7 d8g8 g7h6 c8f8 h6h5 g8g4 Checkmate!  MoveB:f4e2, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: f4e2 Checkmate! ",
+    "expected_output": "MoveB:f4e2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2QQ4/1p5k/p7/8/4pn2/3q1p2/PP5N/2K5 b - - 0 41\". Which move is better? MoveA:h7g7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: h7g7 d8g8 g7h6 c8f8 h6h5 g8g4 Checkmate!  MoveB:f4e2, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: f4e2 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.26370239257812
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            91.74884796142578,
+            92.19963073730469
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.761051177978516
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r1bk1/1q3p1p/1p3Pp1/p2p4/1PrB4/P5P1/4QPBP/3R2K1 w - - 0 26\". Which move is better? MoveA:d4c5, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: d4c5 b6c5 Trade the lower value piece for a higher value piece.  MoveB:b4a5, Capturing another, the pawn changes the overall pawn structure. TacticB: b4a5 c4d4 d1d4 b6a5 e2d3 b7b2  ",
+    "expected_output": "MoveB:b4a5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r1bk1/1q3p1p/1p3Pp1/p2p4/1PrB4/P5P1/4QPBP/3R2K1 w - - 0 26\". Which move is better? MoveA:d4c5, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: d4c5 b6c5 Trade the lower value piece for a higher value piece.  MoveB:b4a5, Capturing another, the pawn changes the overall pawn structure. TacticB: b4a5 c4d4 d1d4 b6a5 e2d3 b7b2  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.61418151855469
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.7752685546875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.78029251098633
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r3r1k1/p1p2RPp/1p2p3/3q4/2nPp1P1/P1P4Q/2P4P/R1B3K1 b - - 0 21\". Which move is better? MoveA:g8f7, Replace the smaller piece with a higher-value one, gaining a strategic edge. TacticA: g8f7 h3h7 e8g8 c1h6 f7e7 a1e1   MoveB:e8e7, Reassign the piece to a central area, where it exercises more control over the board. TacticB: e8e7 f7e7 c4e5 d4e5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:g8f7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r3r1k1/p1p2RPp/1p2p3/3q4/2nPp1P1/P1P4Q/2P4P/R1B3K1 b - - 0 21\". Which move is better? MoveA:g8f7, Replace the smaller piece with a higher-value one, gaining a strategic edge. TacticA: g8f7 h3h7 e8g8 c1h6 f7e7 a1e1   MoveB:e8e7, Reassign the piece to a central area, where it exercises more control over the board. TacticB: e8e7 f7e7 c4e5 d4e5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.36799621582031
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            90.30936431884766
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.17195510864258
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"rn3k2/p1R5/1pbR2pp/8/2p5/8/PbP2PPP/6K1 w - - 2 24\". Which move is better? MoveA:c7c8, Advance the piece to a strategic square, optimizing its control over the board. TacticA: c7c8 f8f7 d6c6 b8c6 Trade the lower value piece for a higher value piece.  MoveB:d6d8, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: d6d8 c6e8 c7c8 f8e7 d8e8 e7f6  ",
+    "expected_output": "MoveB:d6d8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"rn3k2/p1R5/1pbR2pp/8/2p5/8/PbP2PPP/6K1 w - - 2 24\". Which move is better? MoveA:c7c8, Advance the piece to a strategic square, optimizing its control over the board. TacticA: c7c8 f8f7 d6c6 b8c6 Trade the lower value piece for a higher value piece.  MoveB:d6d8, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: d6d8 c6e8 c7c8 f8e7 d8e8 e7f6  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.6146240234375
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.7834701538086,
+            92.32059478759766
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.879844665527344
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/7p/1Q4pk/2pqbp2/8/P4R1P/4NPP1/3r1BK1 b - - 0 38\". Which move is better? MoveA:h6g7, Move the piece to a pivotal position, providing it with greater board command. TacticA: h6g7 b6b3 c5c4 b3c2 d5d3 f3d3 Trade the lower value piece for a higher value piece.  MoveB:f5f4, When a black pawn pushes forward, it creates more room on the kingside, facilitating easier piece movement. TacticB: f5f4 b6b3 d5d2 e2c3 d1c1 g2g4  ",
+    "expected_output": "MoveB:f5f4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/7p/1Q4pk/2pqbp2/8/P4R1P/4NPP1/3r1BK1 b - - 0 38\". Which move is better? MoveA:h6g7, Move the piece to a pivotal position, providing it with greater board command. TacticA: h6g7 b6b3 c5c4 b3c2 d5d3 f3d3 Trade the lower value piece for a higher value piece.  MoveB:f5f4, When a black pawn pushes forward, it creates more room on the kingside, facilitating easier piece movement. TacticB: f5f4 b6b3 d5d2 e2c3 d1c1 g2g4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.07904815673828
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.44499969482422
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.02809143066406
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1r6/6pk/p2qp1rp/3p1p2/P1p5/4PN1P/2P2KP1/R2QR3 b - - 0 33\". Which move is better? MoveA:d6g3, Transfer the piece to a lively area, boosting its impact on the board. TacticA: d6g3 f2e2 g3g2 Checkmate!  MoveB:g6g2, Surrender a piece to establish an open file or diagonal near the rival king TacticB: g6g2 f2g2 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d6g3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1r6/6pk/p2qp1rp/3p1p2/P1p5/4PN1P/2P2KP1/R2QR3 b - - 0 33\". Which move is better? MoveA:d6g3, Transfer the piece to a lively area, boosting its impact on the board. TacticA: d6g3 f2e2 g3g2 Checkmate!  MoveB:g6g2, Surrender a piece to establish an open file or diagonal near the rival king TacticB: g6g2 f2g2 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.94727325439453
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.82494354248047,
+            87.55517578125
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.36275100708008
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r2k1/pp3p1p/5Qp1/8/q4N2/2P1P2P/4pPP1/6K1 w - - 0 37\". Which move is better? MoveA:g1h2, Transfer the piece to a lively area, boosting its impact on the board. TacticA: g1h2 d8c8 f4e6 f7e6 Trade the lower value piece for a higher value piece.  MoveB:f6f7, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticB: f6f7 g8f7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:g1h2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r2k1/pp3p1p/5Qp1/8/q4N2/2P1P2P/4pPP1/6K1 w - - 0 37\". Which move is better? MoveA:g1h2, Transfer the piece to a lively area, boosting its impact on the board. TacticA: g1h2 d8c8 f4e6 f7e6 Trade the lower value piece for a higher value piece.  MoveB:f6f7, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticB: f6f7 g8f7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.851806640625
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            86.33111572265625,
+            88.34136962890625
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.06040954589844
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r4/p3k3/4p2R/p1ppB3/4bP2/2P3P1/7P/6K1 w - - 2 34\". Which move is better? MoveA:h6e6, Give away a piece to clear a path or diagonal near the opponent's king TacticA: h6e6 e7e6 Trade the lower value piece for a higher value piece.  MoveB:e5f6, Plant the piece in a dominant spot, expanding its control over the board. TacticB: e5f6 e7d7 f6d8 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:e5f6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r4/p3k3/4p2R/p1ppB3/4bP2/2P3P1/7P/6K1 w - - 2 34\". Which move is better? MoveA:h6e6, Give away a piece to clear a path or diagonal near the opponent's king TacticA: h6e6 e7e6 Trade the lower value piece for a higher value piece.  MoveB:e5f6, Plant the piece in a dominant spot, expanding its control over the board. TacticB: e5f6 e7d7 f6d8 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.29095458984375
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            90.41925048828125
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            55.51877212524414
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r5k1/2P2ppp/8/4pb2/5B2/5P2/1r4PP/3R2K1 w - - 0 29\". Which move is better? MoveA:f4h6, Marshall the piece to a better square, extending its control over the board. TacticA: f4h6 a8f8 h6g5 f7f6 g5h4 g8f7   MoveB:d1d8, Redeploy the piece to a vibrant location, increasing its board dominance. TacticB: d1d8 a8d8 c7d8q Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:d1d8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r5k1/2P2ppp/8/4pb2/5B2/5P2/1r4PP/3R2K1 w - - 0 29\". Which move is better? MoveA:f4h6, Marshall the piece to a better square, extending its control over the board. TacticA: f4h6 a8f8 h6g5 f7f6 g5h4 g8f7   MoveB:d1d8, Redeploy the piece to a vibrant location, increasing its board dominance. TacticB: d1d8 a8d8 c7d8q Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.22515106201172
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            94.71795654296875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.94719314575195
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r3kb1r/ppp2pp1/4p2p/3pP3/4bBP1/2P1Pq1P/PP1KQ3/R4B1R w kq - 0 15\". Which move is better? MoveA:e2b5, Position the piece more actively, giving it greater board command. TacticA: e2b5 e8d8 f1e2 f3f2 b5b7 d5d4   MoveB:f4g5, Marshall the piece to a better square, extending its control over the board. TacticB: f4g5 a7a6 e2f3 e4f3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:e2b5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r3kb1r/ppp2pp1/4p2p/3pP3/4bBP1/2P1Pq1P/PP1KQ3/R4B1R w kq - 0 15\". Which move is better? MoveA:e2b5, Position the piece more actively, giving it greater board command. TacticA: e2b5 e8d8 f1e2 f3f2 b5b7 d5d4   MoveB:f4g5, Marshall the piece to a better square, extending its control over the board. TacticB: f4g5 a7a6 e2f3 e4f3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.04214477539062
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            86.63675689697266,
+            87.7314453125
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.4478759765625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"b1r1r2k/P5p1/3p1p1p/R2Pq3/4Qp2/2P2B1P/5PP1/3R2K1 b - - 2 31\". Which move is better? MoveA:h8g8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: h8g8 a5b5 e5e4 f3e4 Trade the lower value piece for a higher value piece.  MoveB:c8c4, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: c8c4 e4c4 f6f5 a5b5 h8h7 b5b8  ",
+    "expected_output": "MoveA:h8g8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"b1r1r2k/P5p1/3p1p1p/R2Pq3/4Qp2/2P2B1P/5PP1/3R2K1 b - - 2 31\". Which move is better? MoveA:h8g8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: h8g8 a5b5 e5e4 f3e4 Trade the lower value piece for a higher value piece.  MoveB:c8c4, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: c8c4 e4c4 f6f5 a5b5 h8h7 b5b8  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.26224517822266
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.17544555664062
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.76554870605469
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/pp6/5k2/5p1p/P1P4P/1P1r2RK/8/8 b - - 2 36\". Which move is better? MoveA:d3d1, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: d3d1 g3g8 f6e5 g8h8 e5f4 h8h5   MoveB:f6e7, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: f6e7 g3d3 f5f4 h3g2 e7f7 g2f3  ",
+    "expected_output": "MoveA:d3d1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/pp6/5k2/5p1p/P1P4P/1P1r2RK/8/8 b - - 2 36\". Which move is better? MoveA:d3d1, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: d3d1 g3g8 f6e5 g8h8 e5f4 h8h5   MoveB:f6e7, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticB: f6e7 g3d3 f5f4 h3g2 e7f7 g2f3  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.41886138916016
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            93.13628387451172
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.85219955444336
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r5rk/1b3p2/p1p1p3/6qp/P3Q2R/3B3P/2P3P1/7K w - - 2 27\". Which move is better? MoveA:h4g4, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: h4g4 g5h6 g4h4 f7f5 e4e2 c6c5   MoveB:e4h7, Move the piece to a pivotal position, providing it with greater board command. TacticB: e4h7 Checkmate! ",
+    "expected_output": "MoveB:e4h7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r5rk/1b3p2/p1p1p3/6qp/P3Q2R/3B3P/2P3P1/7K w - - 2 27\". Which move is better? MoveA:h4g4, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: h4g4 g5h6 g4h4 f7f5 e4e2 c6c5   MoveB:e4h7, Move the piece to a pivotal position, providing it with greater board command. TacticB: e4h7 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.31719207763672
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            94.59295654296875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.884315490722656
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/5pp1/p1n4p/qp6/3pN3/P7/1PP4P/2KRQR2 w - - 0 25\". Which move is better? MoveA:e4f6, Place the piece in a commanding position, maximizing its control on the board. TacticA: e4f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:f1f7, Lose a piece to clear a line or diagonal near the opposing king TacticB: f1f7 f8f7 e1a5 c6a5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:e4f6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/5pp1/p1n4p/qp6/3pN3/P7/1PP4P/2KRQR2 w - - 0 25\". Which move is better? MoveA:e4f6, Place the piece in a commanding position, maximizing its control on the board. TacticA: e4f6 g7f6 Trade the lower value piece for a higher value piece.  MoveB:f1f7, Lose a piece to clear a line or diagonal near the opposing king TacticB: f1f7 f8f7 e1a5 c6a5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            77.41719818115234
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            86.91503143310547
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.40752410888672
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2qr1k1/3nppb1/2pp2P1/pp2n1B1/4P3/3B2N1/PPPQ1P2/R4RK1 b - - 0 18\". Which move is better? MoveA:f7g6, A pawn removes another, adjusting the pawn arrangement. TacticA: f7g6 f2f4 e5d3 c2d3 Trade the lower value piece for a higher value piece.  MoveB:e5f3, Marshall the piece to a better square, extending its control over the board. TacticB: e5f3 g1g2 f3d2 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:e5f3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2qr1k1/3nppb1/2pp2P1/pp2n1B1/4P3/3B2N1/PPPQ1P2/R4RK1 b - - 0 18\". Which move is better? MoveA:f7g6, A pawn removes another, adjusting the pawn arrangement. TacticA: f7g6 f2f4 e5d3 c2d3 Trade the lower value piece for a higher value piece.  MoveB:e5f3, Marshall the piece to a better square, extending its control over the board. TacticB: e5f3 g1g2 f3d2 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.09805297851562
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.23171997070312,
+            87.35982513427734
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.99823760986328
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r3q/Q1R2pk1/5bp1/3bp3/1P2p3/4B1P1/P3PP2/2R3K1 b - - 3 33\". Which move is better? MoveA:h8g8, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: h8g8 c7d7 d8a8 d7d5 a8a7 Trade the lower value piece for a higher value piece.  MoveB:h8h3, Set the piece in a more potent location, giving it superior board control. TacticB: h8h3 c7f7 d5f7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:h8h3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r3q/Q1R2pk1/5bp1/3bp3/1P2p3/4B1P1/P3PP2/2R3K1 b - - 3 33\". Which move is better? MoveA:h8g8, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: h8g8 c7d7 d8a8 d7d5 a8a7 Trade the lower value piece for a higher value piece.  MoveB:h8h3, Set the piece in a more potent location, giving it superior board control. TacticB: h8h3 c7f7 d5f7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.1986312866211
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            87.72007751464844,
+            89.48818969726562
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.99463653564453
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r1b1k2r/pppp1ppp/2n5/2q1P3/1PP2P2/P4NP1/4Kb1P/RN1Q1B1R b kq - 2 11\". Which move is better? MoveA:c5e3, Relocate the piece to a dynamic square, it's more influential on the board. TacticA: c5e3 Checkmate!  MoveB:h8g8, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: h8g8 b4c5 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:c5e3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r1b1k2r/pppp1ppp/2n5/2q1P3/1PP2P2/P4NP1/4Kb1P/RN1Q1B1R b kq - 2 11\". Which move is better? MoveA:c5e3, Relocate the piece to a dynamic square, it's more influential on the board. TacticA: c5e3 Checkmate!  MoveB:h8g8, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: h8g8 b4c5 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            84.91213989257812
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            91.85012817382812
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.781795501708984
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/p1q2ppp/1p1bp3/3n3b/3n4/1Q3N1P/PP1NBPP1/R1B2RK1 w - - 0 15\". Which move is better? MoveA:b3c4, Plant the piece in a dominant spot, expanding its control over the board. TacticA: b3c4 d4e2 c4e2 d6e7 e2e5 a8c8   MoveB:f3g5, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: f3g5 d4b3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:b3c4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/p1q2ppp/1p1bp3/3n3b/3n4/1Q3N1P/PP1NBPP1/R1B2RK1 w - - 0 15\". Which move is better? MoveA:b3c4, Plant the piece in a dominant spot, expanding its control over the board. TacticA: b3c4 d4e2 c4e2 d6e7 e2e5 a8c8   MoveB:f3g5, Settle the piece in a more energetic spot, where it has better board supervision. TacticB: f3g5 d4b3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            84.47720336914062
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            91.73632049560547
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.157352447509766
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/1B3pkp/pnR3p1/8/1P6/r3P3/5PPP/6K1 b - - 1 25\". Which move is better? MoveA:g7f8, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: g7f8 h2h3 b6d7 b7a6 h7h5 a6c4   MoveB:a3a1, Reassign the piece to a central area, where it exercises more control over the board. TacticB: a3a1 c6c1 a1c1 Checkmate! ",
+    "expected_output": "MoveB:a3a1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/1B3pkp/pnR3p1/8/1P6/r3P3/5PPP/6K1 b - - 1 25\". Which move is better? MoveA:g7f8, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: g7f8 h2h3 b6d7 b7a6 h7h5 a6c4   MoveB:a3a1, Reassign the piece to a central area, where it exercises more control over the board. TacticB: a3a1 c6c1 a1c1 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.32759857177734
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            94.48355102539062
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.72880554199219
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/5Qbk/3B2pp/1B6/P7/4P2P/4NnPK/1q6 b - - 0 34\". Which move is better? MoveA:f2h3, Surrender a piece to create an open file or diagonal near the opposing king TacticA: f2h3 d6e5 b1h1 h2h1 Trade the lower value piece for a higher value piece.  MoveB:b1f1, Transfer the piece to a lively area, boosting its impact on the board. TacticB: b1f1 f7b7 f1d1 d6e5 d1h1 h2g3  ",
+    "expected_output": "MoveB:b1f1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/5Qbk/3B2pp/1B6/P7/4P2P/4NnPK/1q6 b - - 0 34\". Which move is better? MoveA:f2h3, Surrender a piece to create an open file or diagonal near the opposing king TacticA: f2h3 d6e5 b1h1 h2h1 Trade the lower value piece for a higher value piece.  MoveB:b1f1, Transfer the piece to a lively area, boosting its impact on the board. TacticB: b1f1 f7b7 f1d1 d6e5 d1h1 h2g3  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.9615249633789
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            97.59628295898438
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.23490524291992
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/p1pk4/1p1p4/4p2r/P3Pp2/2P4P/2Pn1PK1/3R3R b - - 3 30\". Which move is better? MoveA:h5h3, Exchange a piece to open up a file or diagonal near the opponent's king TacticA: h5h3 h1h3 d2e4 d1h1 d7c6 h1a1   MoveB:h5g5, Place the piece in a commanding position, maximizing its control on the board. TacticB: h5g5 g2h2 d2f3 Checkmate! ",
+    "expected_output": "MoveB:h5g5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/p1pk4/1p1p4/4p2r/P3Pp2/2P4P/2Pn1PK1/3R3R b - - 3 30\". Which move is better? MoveA:h5h3, Exchange a piece to open up a file or diagonal near the opponent's king TacticA: h5h3 h1h3 d2e4 d1h1 d7c6 h1a1   MoveB:h5g5, Place the piece in a commanding position, maximizing its control on the board. TacticB: h5g5 g2h2 d2f3 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.29216766357422
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.89904022216797,
+            90.92638397216797
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.75136184692383
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r3k2r/pp3pp1/2pp4/4p3/1Q1PP2p/2N1P1q1/PPP3B1/R4RK1 b kq - 3 19\". Which move is better? MoveA:e5d4, The pawn's capture of another pawn modifies the structure. TacticA: e5d4 c3b5 h4h3 b5d6 g3d6 b4d6   MoveB:h4h3, By moving a black pawn forward, the kingside becomes more spacious, offering more opportunities to move pieces freely. TacticB: h4h3 f1f2 e8c8 c3e2 h3h2 g1h1  ",
+    "expected_output": "MoveB:h4h3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r3k2r/pp3pp1/2pp4/4p3/1Q1PP2p/2N1P1q1/PPP3B1/R4RK1 b kq - 3 19\". Which move is better? MoveA:e5d4, The pawn's capture of another pawn modifies the structure. TacticA: e5d4 c3b5 h4h3 b5d6 g3d6 b4d6   MoveB:h4h3, By moving a black pawn forward, the kingside becomes more spacious, offering more opportunities to move pieces freely. TacticB: h4h3 f1f2 e8c8 c3e2 h3h2 g1h1  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.47916412353516
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.3274154663086
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.55904006958008
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2k1q1n1/ppp3B1/8/7p/2N2b2/1P1Q3P/P1P3P1/1K2R3 b - - 0 23\". Which move is better? MoveA:g8h6, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: g8h6 e1e8 Trade the lower value piece for a higher value piece.  MoveB:e8d7, Move the piece to a pivotal position, providing it with greater board command. TacticB: e8d7 d3g6 g8e7 g6f6 b7b5 f6f4  ",
+    "expected_output": "MoveB:e8d7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2k1q1n1/ppp3B1/8/7p/2N2b2/1P1Q3P/P1P3P1/1K2R3 b - - 0 23\". Which move is better? MoveA:g8h6, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: g8h6 e1e8 Trade the lower value piece for a higher value piece.  MoveB:e8d7, Move the piece to a pivotal position, providing it with greater board command. TacticB: e8d7 d3g6 g8e7 g6f6 b7b5 f6f4  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.54291534423828
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.3732681274414,
+            91.01791381835938
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.52599334716797
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/7p/4kpp1/8/2p2PPP/r1P1PN2/p1b1K3/R7 w - - 15 49\". Which move is better? MoveA:f3g5, Transfer the piece to a lively area, boosting its impact on the board. TacticA: f3g5 f6g5 Trade the lower value piece for a higher value piece.  MoveB:f3d4, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3d4 e6d6 d4c2 a3a8 h4h5 f6f5  ",
+    "expected_output": "MoveB:f3d4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/7p/4kpp1/8/2p2PPP/r1P1PN2/p1b1K3/R7 w - - 15 49\". Which move is better? MoveA:f3g5, Transfer the piece to a lively area, boosting its impact on the board. TacticA: f3g5 f6g5 Trade the lower value piece for a higher value piece.  MoveB:f3d4, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3d4 e6d6 d4c2 a3a8 h4h5 f6f5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.88497924804688
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            93.34146881103516,
+            91.00935363769531
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.349300384521484
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4B3/2R2pk1/4p1pp/p2pP3/P4q1b/5N2/6P1/7K w - - 0 37\". Which move is better? MoveA:c7f7, Lose a piece to create an opening on a file or diagonal near the rival king TacticA: c7f7 f4f7 e8f7 Trade the lower value piece for a higher value piece.  MoveB:e8f7, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: e8f7 h4d8 c7c8 f4f7 c8d8 g6g5  ",
+    "expected_output": "MoveA:c7f7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4B3/2R2pk1/4p1pp/p2pP3/P4q1b/5N2/6P1/7K w - - 0 37\". Which move is better? MoveA:c7f7, Lose a piece to create an opening on a file or diagonal near the rival king TacticA: c7f7 f4f7 e8f7 Trade the lower value piece for a higher value piece.  MoveB:e8f7, Sacrifice a piece to unlock a file or diagonal in proximity to the opposing king TacticB: e8f7 h4d8 c7c8 f4f7 c8d8 g6g5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.7083969116211
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.25582122802734
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.41645050048828
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r4/5p2/5q2/6kp/1pNbQ1p1/1P6/4NPP1/1R4K1 b - - 3 42\". Which move is better? MoveA:f6f2, Offer a piece to clear a file or diagonal close to the enemy king TacticA: f6f2 g1h2 f2h4 Checkmate!  MoveB:d4f2, Give away a piece to clear a path or diagonal near the opponent's king TacticB: d4f2 g1h1 g5h6 e4f4 f6f4 e2f4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:f6f2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r4/5p2/5q2/6kp/1pNbQ1p1/1P6/4NPP1/1R4K1 b - - 3 42\". Which move is better? MoveA:f6f2, Offer a piece to clear a file or diagonal close to the enemy king TacticA: f6f2 g1h2 f2h4 Checkmate!  MoveB:d4f2, Give away a piece to clear a path or diagonal near the opponent's king TacticB: d4f2 g1h1 g5h6 e4f4 f6f4 e2f4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            86.04460144042969
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.29244232177734
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.734657287597656
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/8/2p5/2B4K/pp1P1PpP/P5P1/1k4b1/8 b - - 0 54\". Which move is better? MoveA:g2d5, Plant the piece in a dominant spot, expanding its control over the board. TacticA: g2d5 c5b4 d5e6 h5h6 b2c2 h6g6   MoveB:b4b3, By advancing a black pawn, additional space on the queenside is created, permitting more dynamic piece movement. TacticB: b4b3 d4d5 g2d5 h5g6 b2c2 c5d4  ",
+    "expected_output": "MoveB:b4b3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/8/2p5/2B4K/pp1P1PpP/P5P1/1k4b1/8 b - - 0 54\". Which move is better? MoveA:g2d5, Plant the piece in a dominant spot, expanding its control over the board. TacticA: g2d5 c5b4 d5e6 h5h6 b2c2 h6g6   MoveB:b4b3, By advancing a black pawn, additional space on the queenside is created, permitting more dynamic piece movement. TacticB: b4b3 d4d5 g2d5 h5g6 b2c2 c5d4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.89768981933594
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            92.95063018798828
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.45485305786133
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/5ppp/1bb5/p3p3/3qB3/P7/2PB1PPP/R2QR1K1 w - - 2 18\". Which move is better? MoveA:e4h7, Remove a piece to free up a file or diagonal close to the enemy king TacticA: e4h7 g8h7 Trade the lower value piece for a higher value piece.  MoveB:d1e2, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d1e2 c6e4 d2e3 d4d6 e3b6 f7f5  ",
+    "expected_output": "MoveB:d1e2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/5ppp/1bb5/p3p3/3qB3/P7/2PB1PPP/R2QR1K1 w - - 2 18\". Which move is better? MoveA:e4h7, Remove a piece to free up a file or diagonal close to the enemy king TacticA: e4h7 g8h7 Trade the lower value piece for a higher value piece.  MoveB:d1e2, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: d1e2 c6e4 d2e3 d4d6 e3b6 f7f5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.26870727539062
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.89476013183594
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.652496337890625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2k5/ppp5/8/6np/1PP5/P2rBR2/R2Pr3/7K w - - 1 31\". Which move is better? MoveA:f3f7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: f3f7 g5f7 Trade the lower value piece for a higher value piece.  MoveB:f3f8, Transfer the piece to a lively area, boosting its impact on the board. TacticB: f3f8 c8d7 e3g5 d7c6 b4b5 c6c5  ",
+    "expected_output": "MoveB:f3f8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2k5/ppp5/8/6np/1PP5/P2rBR2/R2Pr3/7K w - - 1 31\". Which move is better? MoveA:f3f7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticA: f3f7 g5f7 Trade the lower value piece for a higher value piece.  MoveB:f3f8, Transfer the piece to a lively area, boosting its impact on the board. TacticB: f3f8 c8d7 e3g5 d7c6 b4b5 c6c5  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.21272277832031
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            94.8126220703125
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.95343780517578
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r4/P4p1p/1P4p1/4k3/3bP3/2p4P/5PP1/3R1K2 w - - 4 34\". Which move is better? MoveA:f1e2, Move the piece to a pivotal position, providing it with greater board command. TacticA: f1e2 c3c2 d1c1 d4b6 c1c2 d8a8   MoveB:b6b7, Shifting a white pawn forward broadens the queenside, enabling more strategic piece relocation. TacticB: b6b7 d4a7 d1d8 e5e4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:b6b7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r4/P4p1p/1P4p1/4k3/3bP3/2p4P/5PP1/3R1K2 w - - 4 34\". Which move is better? MoveA:f1e2, Move the piece to a pivotal position, providing it with greater board command. TacticA: f1e2 c3c2 d1c1 d4b6 c1c2 d8a8   MoveB:b6b7, Shifting a white pawn forward broadens the queenside, enabling more strategic piece relocation. TacticB: b6b7 d4a7 d1d8 e5e4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.11102294921875
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            86.77495574951172
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.223052978515625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r2k1/5p2/6p1/1N2P2p/2p2P2/2Pr1qPP/1PQ2BRK/8 b - - 0 37\". Which move is better? MoveA:d3d2, Move the piece to a pivotal position, providing it with greater board command. TacticA: d3d2 c2d2 d8d2 Trade the lower value piece for a higher value piece.  MoveB:f3g3, Give up a piece to open a path or line near the opponent's king TacticB: f3g3 f2g3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d3d2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r2k1/5p2/6p1/1N2P2p/2p2P2/2Pr1qPP/1PQ2BRK/8 b - - 0 37\". Which move is better? MoveA:d3d2, Move the piece to a pivotal position, providing it with greater board command. TacticA: d3d2 c2d2 d8d2 Trade the lower value piece for a higher value piece.  MoveB:f3g3, Give up a piece to open a path or line near the opponent's king TacticB: f3g3 f2g3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            77.97309875488281
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            89.34012603759766
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            53.93121337890625
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r5nr/pp1bk1pp/4pp2/qN1pn3/3Q4/8/PPPN1PPP/R3KB1R w KQ - 3 15\". Which move is better? MoveA:d4c5, Displace the piece to a more promising position, strengthening its board authority. TacticA: d4c5 e7d8 c5f8 d7e8 b5d6 d8d7   MoveB:b5c7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: b5c7 a5c7 d4c3 c7b6 a2a4 e7f7  ",
+    "expected_output": "MoveA:d4c5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r5nr/pp1bk1pp/4pp2/qN1pn3/3Q4/8/PPPN1PPP/R3KB1R w KQ - 3 15\". Which move is better? MoveA:d4c5, Displace the piece to a more promising position, strengthening its board authority. TacticA: d4c5 e7d8 c5f8 d7e8 b5d6 d8d7   MoveB:b5c7, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: b5c7 a5c7 d4c3 c7b6 a2a4 e7f7  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.21453857421875
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.56890869140625,
+            88.826416015625
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.21409606933594
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/p5pp/4pb2/2pq4/1nNp1B2/8/PPP1QPPP/R4RK1 b - - 5 18\". Which move is better? MoveA:d4d3, Moving a black pawn forward expands the center, offering more avenues for piece movement. TacticA: d4d3 c2d3 b4d3 f4d6 d5c4 d6f8 Trade the lower value piece for a higher value piece.  MoveB:d5g2, Offer a piece to open a file or diagonal adjacent to the opposing king TacticB: d5g2 g1g2 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:d4d3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/p5pp/4pb2/2pq4/1nNp1B2/8/PPP1QPPP/R4RK1 b - - 5 18\". Which move is better? MoveA:d4d3, Moving a black pawn forward expands the center, offering more avenues for piece movement. TacticA: d4d3 c2d3 b4d3 f4d6 d5c4 d6f8 Trade the lower value piece for a higher value piece.  MoveB:d5g2, Offer a piece to open a file or diagonal adjacent to the opposing king TacticB: d5g2 g1g2 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.67866516113281
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.31957244873047,
+            89.73101043701172
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.36309051513672
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2r5/5pkp/R3p1p1/2Nn4/1pQP1q1P/8/1P3PP1/6K1 w - - 3 26\". Which move is better? MoveA:a6a8, Transfer the piece to a lively area, boosting its impact on the board. TacticA: a6a8 c8a8 h4h5 a8a1 c4f1 a1c1   MoveB:a6a7, Transfer the piece to a lively area, boosting its impact on the board. TacticB: a6a7 c8c5 c4c5 f4h4 c5d6 h4g4  ",
+    "expected_output": "MoveB:a6a7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2r5/5pkp/R3p1p1/2Nn4/1pQP1q1P/8/1P3PP1/6K1 w - - 3 26\". Which move is better? MoveA:a6a8, Transfer the piece to a lively area, boosting its impact on the board. TacticA: a6a8 c8a8 h4h5 a8a1 c4f1 a1c1   MoveB:a6a7, Transfer the piece to a lively area, boosting its impact on the board. TacticB: a6a7 c8c5 c4c5 f4h4 c5d6 h4g4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.42880249023438
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.33631896972656
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.869503021240234
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/1p1r1p2/p3k3/N1P1p3/1P6/P3KP2/1n3P2/1R6 b - - 7 33\". Which move is better? MoveA:b2d1, Reposition the piece to an assertive square, where it governs more of the board. TacticA: b2d1 b1d1 d7d1 a5b7 e6d5 b7d8   MoveB:d7d6, Reassign the piece to a central area, where it exercises more control over the board. TacticB: d7d6 b1b2 b7b6 c5d6 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:b2d1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/1p1r1p2/p3k3/N1P1p3/1P6/P3KP2/1n3P2/1R6 b - - 7 33\". Which move is better? MoveA:b2d1, Reposition the piece to an assertive square, where it governs more of the board. TacticA: b2d1 b1d1 d7d1 a5b7 e6d5 b7d8   MoveB:d7d6, Reassign the piece to a central area, where it exercises more control over the board. TacticB: d7d6 b1b2 b7b6 c5d6 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.4220962524414
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.6329345703125,
+            88.39037322998047
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.33818435668945
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"8/8/r2k3p/1R1p4/2p5/2P2B2/1K1b2P1/8 w - - 12 49\". Which move is better? MoveA:b5d5, Give up a piece to gain access to a file or diagonal near the enemy king TacticA: b5d5 d6c7 d5d2 a6g6 d2d4 g6g3   MoveB:f3d5, Lose a piece to create an opening on a file or diagonal near the rival king TacticB: f3d5 d2e3 d5c4 a6b6 b2b3 e3c5  ",
+    "expected_output": "MoveA:b5d5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"8/8/r2k3p/1R1p4/2p5/2P2B2/1K1b2P1/8 w - - 12 49\". Which move is better? MoveA:b5d5, Give up a piece to gain access to a file or diagonal near the enemy king TacticA: b5d5 d6c7 d5d2 a6g6 d2d4 g6g3   MoveB:f3d5, Lose a piece to create an opening on a file or diagonal near the rival king TacticB: f3d5 d2e3 d5c4 a6b6 b2b3 e3c5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.42779541015625
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.90975952148438
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.36238479614258
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2q1r1k/1p4p1/p3Q2p/3n1P2/3P4/2P2N2/PP3PP1/R3K2R b KQ - 0 20\". Which move is better? MoveA:f8e8, Set the piece in a more potent location, giving it superior board control. TacticA: f8e8 h1h4 d8b6 e1f1 e8e6 Trade the lower value piece for a higher value piece.  MoveB:h8h7, Move the piece to an aggressive spot, enhancing its control over the board. TacticB: h8h7 e1f1 f8f6 e6e4 d8d7 g2g4  ",
+    "expected_output": "MoveA:f8e8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2q1r1k/1p4p1/p3Q2p/3n1P2/3P4/2P2N2/PP3PP1/R3K2R b KQ - 0 20\". Which move is better? MoveA:f8e8, Set the piece in a more potent location, giving it superior board control. TacticA: f8e8 h1h4 d8b6 e1f1 e8e6 Trade the lower value piece for a higher value piece.  MoveB:h8h7, Move the piece to an aggressive spot, enhancing its control over the board. TacticB: h8h7 e1f1 f8f6 e6e4 d8d7 g2g4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            84.39815521240234
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            91.96794128417969
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.50752639770508
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4r1k1/1p3ppp/p1b3r1/3q4/3P1QN1/B3PP2/5K2/1R2R3 b - - 2 34\". Which move is better? MoveA:h7h5, Shifting a black pawn forward broadens the kingside, enabling more strategic piece relocation. TacticA: h7h5 g4h2 g6f6 f4g3 d5a2 a3b2   MoveB:e8e3, Sacrifice a piece to break open a file or diagonal close to the enemy king TacticB: e8e3 f4b8 d5d8 b8d8 c6e8 d8e8  ",
+    "expected_output": "MoveA:h7h5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4r1k1/1p3ppp/p1b3r1/3q4/3P1QN1/B3PP2/5K2/1R2R3 b - - 2 34\". Which move is better? MoveA:h7h5, Shifting a black pawn forward broadens the kingside, enabling more strategic piece relocation. TacticA: h7h5 g4h2 g6f6 f4g3 d5a2 a3b2   MoveB:e8e3, Sacrifice a piece to break open a file or diagonal close to the enemy king TacticB: e8e3 f4b8 d5d8 b8d8 c6e8 d8e8  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.49725341796875
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            90.5154800415039,
+            88.2892074584961
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.43029022216797
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4k3/8/4p3/1p3pp1/4n3/5PPK/2r4R/5R2 b - - 0 33\". Which move is better? MoveA:e4g3, Surrender a piece to create an open file or diagonal near the opposing king TacticA: e4g3 h3g3 Trade the lower value piece for a higher value piece.  MoveB:g5g4, By moving a black pawn forward, the kingside becomes more spacious, offering more opportunities to move pieces freely. TacticB: g5g4 f3g4 f5g4 h3g4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:g5g4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4k3/8/4p3/1p3pp1/4n3/5PPK/2r4R/5R2 b - - 0 33\". Which move is better? MoveA:e4g3, Surrender a piece to create an open file or diagonal near the opposing king TacticA: e4g3 h3g3 Trade the lower value piece for a higher value piece.  MoveB:g5g4, By moving a black pawn forward, the kingside becomes more spacious, offering more opportunities to move pieces freely. TacticB: g5g4 f3g4 f5g4 h3g4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.944091796875
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            87.71945190429688
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            55.665584564208984
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r3k2r/1p3ppp/p1n2n2/3pp3/6bP/2P1qPB1/PP2B3/1R1QK1NR w Kkq - 0 15\". Which move is better? MoveA:f3g4, Switch a lower value piece with a higher value piece, to gain an advantage. TacticA: f3g4 e3g3 e1f1 f6e4 d1e1 h7h5   MoveB:g3f2, Adjust the piece to a key area, where it holds more influence over the board. TacticB: g3f2 e3f4 f2c5 g4e6 g1h3 f4g3  ",
+    "expected_output": "MoveB:g3f2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r3k2r/1p3ppp/p1n2n2/3pp3/6bP/2P1qPB1/PP2B3/1R1QK1NR w Kkq - 0 15\". Which move is better? MoveA:f3g4, Switch a lower value piece with a higher value piece, to gain an advantage. TacticA: f3g4 e3g3 e1f1 f6e4 d1e1 h7h5   MoveB:g3f2, Adjust the piece to a key area, where it holds more influence over the board. TacticB: g3f2 e3f4 f2c5 g4e6 g1h3 f4g3  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.29924774169922
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            92.12506866455078
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.00357437133789
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4r1k1/p1p2ppp/1qpp4/4r2n/N1Q1P3/5P1P/PPP3P1/1R2RK2 b - - 2 20\". Which move is better? MoveA:g8f8, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: g8f8 a4b6 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Marshall the piece to a better square, extending its control over the board. TacticB: h5g3 Checkmate! ",
+    "expected_output": "MoveB:h5g3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4r1k1/p1p2ppp/1qpp4/4r2n/N1Q1P3/5P1P/PPP3P1/1R2RK2 b - - 2 20\". Which move is better? MoveA:g8f8, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: g8f8 a4b6 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Marshall the piece to a better square, extending its control over the board. TacticB: h5g3 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.61885833740234
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            90.91627502441406
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.091644287109375
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2r2k1/6pp/1bpQ2p1/8/P1qP4/8/1B3PPP/R1R3K1 b - - 2 26\". Which move is better? MoveA:c4b3, Advance the piece to a strategic square, optimizing its control over the board. TacticA: c4b3 d6c6 b3b2 c1b1 b2d4 c6b6   MoveB:g8f7, Plant the piece in a dominant spot, expanding its control over the board. TacticB: g8f7 d6f4 f7e7 c1c4 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:c4b3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2r2k1/6pp/1bpQ2p1/8/P1qP4/8/1B3PPP/R1R3K1 b - - 2 26\". Which move is better? MoveA:c4b3, Advance the piece to a strategic square, optimizing its control over the board. TacticA: c4b3 d6c6 b3b2 c1b1 b2d4 c6b6   MoveB:g8f7, Plant the piece in a dominant spot, expanding its control over the board. TacticB: g8f7 d6f4 f7e7 c1c4 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.62242126464844
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            86.89327239990234,
+            89.36809539794922
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.62017059326172
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"b5k1/5p2/1p2p3/4b1p1/6B1/2P3Pq/PP3P1N/R4RK1 b - - 1 24\". Which move is better? MoveA:h3g2, Move the piece to a stronger position, enhancing its board control. TacticA: h3g2 Checkmate!  MoveB:g8f8, Shift the piece to a proactive position, where it exerts more influence. TacticB: g8f8 g4h3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:h3g2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"b5k1/5p2/1p2p3/4b1p1/6B1/2P3Pq/PP3P1N/R4RK1 b - - 1 24\". Which move is better? MoveA:h3g2, Move the piece to a stronger position, enhancing its board control. TacticA: h3g2 Checkmate!  MoveB:g8f8, Shift the piece to a proactive position, where it exerts more influence. TacticB: g8f8 g4h3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.74288177490234
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            92.13359832763672,
+            89.6365737915039
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.41231155395508
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5rk1/p2r3p/4p1p1/1p1nP3/2pP2Q1/1PP5/P2R2PP/6K1 b - - 0 30\". Which move is better? MoveA:f8f1, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: f8f1 g1f1 Trade the lower value piece for a higher value piece.  MoveB:c4b3, Capturing another pawn, the pawn transforms the structure. TacticB: c4b3 g4e6 d7f7 e6d5 g8g7 d2d1  ",
+    "expected_output": "MoveA:f8f1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5rk1/p2r3p/4p1p1/1p1nP3/2pP2Q1/1PP5/P2R2PP/6K1 b - - 0 30\". Which move is better? MoveA:f8f1, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: f8f1 g1f1 Trade the lower value piece for a higher value piece.  MoveB:c4b3, Capturing another pawn, the pawn transforms the structure. TacticB: c4b3 g4e6 d7f7 e6d5 g8g7 d2d1  \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            77.58148193359375
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.16175079345703,
+            89.17584991455078
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.55575942993164
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"rq2kb1r/4np1p/p1n1p1p1/1p1pN3/3P4/2N5/PPQ1PPBP/R1B1K2R b KQkq - 1 15\". Which move is better? MoveA:b8c7, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: b8c7 c3d5 e6d5 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Position the piece more actively, giving it greater board command. TacticB: h8g8 e5c6 e7c6 c3d5 b8d6 c1f4  ",
+    "expected_output": "MoveA:b8c7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"rq2kb1r/4np1p/p1n1p1p1/1p1pN3/3P4/2N5/PPQ1PPBP/R1B1K2R b KQkq - 1 15\". Which move is better? MoveA:b8c7, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: b8c7 c3d5 e6d5 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Position the piece more actively, giving it greater board command. TacticB: h8g8 e5c6 e7c6 c3d5 b8d6 c1f4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.56624603271484
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            92.82865142822266
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.3778076171875
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2Q5/7k/2K1R2p/3P4/8/6q1/6p1/8 b - - 2 48\". Which move is better? MoveA:h7g7, Move the piece to a stronger position, enhancing its board control. TacticA: h7g7 c8b7 g7h8 e6h6 h8g8 b7h7   MoveB:g3c3, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g3c3 c6d7 c3c8 d7c8 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:g3c3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2Q5/7k/2K1R2p/3P4/8/6q1/6p1/8 b - - 2 48\". Which move is better? MoveA:h7g7, Move the piece to a stronger position, enhancing its board control. TacticA: h7g7 c8b7 g7h8 e6h6 h8g8 b7h7   MoveB:g3c3, Advance the piece to a strategic square, optimizing its control over the board. TacticB: g3c3 c6d7 c3c8 d7c8 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.78707122802734
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            87.8261947631836
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.42633819580078
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3r2k1/2qr1pp1/2p1pn1p/ppP5/3P4/P1Q4P/BP1R1PP1/3R2K1 b - - 1 25\". Which move is better? MoveA:g8f8, Marshall the piece to a better square, extending its control over the board. TacticA: g8f8 c3e3 f6d5 e3f3 g7g6 h3h4   MoveB:f6e4, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: f6e4 c3e3 e4d2 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:f6e4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3r2k1/2qr1pp1/2p1pn1p/ppP5/3P4/P1Q4P/BP1R1PP1/3R2K1 b - - 1 25\". Which move is better? MoveA:g8f8, Marshall the piece to a better square, extending its control over the board. TacticA: g8f8 c3e3 f6d5 e3f3 g7g6 h3h4   MoveB:f6e4, Navigate the piece to an advanced spot, augmenting its influence over the board. TacticB: f6e4 c3e3 e4d2 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.4693832397461
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            89.743408203125
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.25910949707031
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"4r2k/2p3p1/3p1q2/2pP3p/b1P4P/3BQNP1/1r3P1K/4R3 w - - 6 32\". Which move is better? MoveA:h2g2, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: h2g2 e8e3 Trade the lower value piece for a higher value piece.  MoveB:f3g5, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3g5 e8e3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:h2g2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"4r2k/2p3p1/3p1q2/2pP3p/b1P4P/3BQNP1/1r3P1K/4R3 w - - 6 32\". Which move is better? MoveA:h2g2, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: h2g2 e8e3 Trade the lower value piece for a higher value piece.  MoveB:f3g5, Advance the piece to a strategic square, optimizing its control over the board. TacticB: f3g5 e8e3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.82801055908203
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            84.3835220336914,
+            83.29733276367188
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.91449737548828
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2r1k2r/2qb1pp1/3pp3/pp2b3/1P2P3/1N2QB1P/PP2NP2/1K1R3R b k - 0 20\". Which move is better? MoveA:e5b2, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticA: e5b2 b1b2 Trade the lower value piece for a higher value piece.  MoveB:c7c2, Marshall the piece to a better square, extending its control over the board. TacticB: c7c2 b1a1 e5b2 Checkmate! ",
+    "expected_output": "MoveB:c7c2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2r1k2r/2qb1pp1/3pp3/pp2b3/1P2P3/1N2QB1P/PP2NP2/1K1R3R b k - 0 20\". Which move is better? MoveA:e5b2, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticA: e5b2 b1b2 Trade the lower value piece for a higher value piece.  MoveB:c7c2, Marshall the piece to a better square, extending its control over the board. TacticB: c7c2 b1a1 e5b2 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.05779266357422
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            91.15341186523438
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.28288269042969
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r7/p1p1q1k1/3p4/2pPppP1/2P2P2/3Q4/PP6/2KR3r w - - 0 29\". Which move is better? MoveA:d3e4, Advance the piece to a strategic square, optimizing its control over the board. TacticA: d3e4 h1d1 c1d1 Trade the lower value piece for a higher value piece.  MoveB:f4e5, The pawn captures its counterpart, changing the structural layout. TacticB: f4e5 h1d1 d3d1 e7g5 c1b1 d6e5  ",
+    "expected_output": "MoveB:f4e5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r7/p1p1q1k1/3p4/2pPppP1/2P2P2/3Q4/PP6/2KR3r w - - 0 29\". Which move is better? MoveA:d3e4, Advance the piece to a strategic square, optimizing its control over the board. TacticA: d3e4 h1d1 c1d1 Trade the lower value piece for a higher value piece.  MoveB:f4e5, The pawn captures its counterpart, changing the structural layout. TacticB: f4e5 h1d1 d3d1 e7g5 c1b1 d6e5  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.60617065429688
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            89.34960174560547,
+            88.56071472167969
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.77970886230469
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/ppp1b1pp/2n5/3pP2n/3P4/4BB1q/PPP4P/R2Q1RNK b - - 2 17\". Which move is better? MoveA:h3h2, Exchange a piece to open up a file or diagonal near the opponent's king TacticA: h3h2 h1h2 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Displace the piece to a more promising position, strengthening its board authority. TacticB: h5g3 Checkmate! ",
+    "expected_output": "MoveB:h5g3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/ppp1b1pp/2n5/3pP2n/3P4/4BB1q/PPP4P/R2Q1RNK b - - 2 17\". Which move is better? MoveA:h3h2, Exchange a piece to open up a file or diagonal near the opponent's king TacticA: h3h2 h1h2 Trade the lower value piece for a higher value piece.  MoveB:h5g3, Displace the piece to a more promising position, strengthening its board authority. TacticB: h5g3 Checkmate! \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.32855224609375
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            94.62613677978516
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.141807556152344
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r2qr1k1/ppp2ppp/2n2n2/3pP3/1b1P2b1/2N2N2/PPQ1BPPP/R1B1K2R b KQ - 2 10\". Which move is better? MoveA:f6e4, Marshall the piece to a better square, extending its control over the board. TacticA: f6e4 c1e3 b4a5 a1c1 g4f5 c2a4   MoveB:e8e7, Set the piece in a more potent location, giving it superior board control. TacticB: e8e7 c1e3 f6e4 h2h3 g4h5 e1g1  ",
+    "expected_output": "MoveA:f6e4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r2qr1k1/ppp2ppp/2n2n2/3pP3/1b1P2b1/2N2N2/PPQ1BPPP/R1B1K2R b KQ - 2 10\". Which move is better? MoveA:f6e4, Marshall the piece to a better square, extending its control over the board. TacticA: f6e4 c1e3 b4a5 a1c1 g4f5 c2a4   MoveB:e8e7, Set the piece in a more potent location, giving it superior board control. TacticB: e8e7 c1e3 f6e4 h2h3 g4h5 e1g1  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.63756561279297
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            90.19640350341797
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.59672546386719
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r4rk1/ppp2ppp/2n1pn2/8/Q2q1B2/5BP1/PP2PP1P/R4RK1 w - - 0 13\". Which move is better? MoveA:f4h6, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: f4h6 d4a4 h6f4 c6d4 f4c7 a4b5   MoveB:a4b5, Reassign the piece to a central area, where it exercises more control over the board. TacticB: a4b5 d4b6 b5b6 c7b6 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:a4b5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r4rk1/ppp2ppp/2n1pn2/8/Q2q1B2/5BP1/PP2PP1P/R4RK1 w - - 0 13\". Which move is better? MoveA:f4h6, Redeploy the piece to a vibrant location, increasing its board dominance. TacticA: f4h6 d4a4 h6f4 c6d4 f4c7 a4b5   MoveB:a4b5, Reassign the piece to a central area, where it exercises more control over the board. TacticB: a4b5 d4b6 b5b6 c7b6 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.42666625976562
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            90.81588745117188
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            61.151527404785156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"r1b2rk1/pppp1ppp/1b4qn/1B1N4/3PP3/4B3/PP3PPP/R2QK2R w KQ - 5 11\". Which move is better? MoveA:d5e7, Shift the piece to a proactive position, where it exerts more influence. TacticA: d5e7 g8h8 e7g6 Trade the lower value piece for a higher value piece.  MoveB:d5f6, Adjust the piece to a key area, where it holds more influence over the board. TacticB: d5f6 g6f6 b5e2 d7d5 g2g4 f6d8  ",
+    "expected_output": "MoveA:d5e7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"r1b2rk1/pppp1ppp/1b4qn/1B1N4/3PP3/4B3/PP3PPP/R2QK2R w KQ - 5 11\". Which move is better? MoveA:d5e7, Shift the piece to a proactive position, where it exerts more influence. TacticA: d5e7 g8h8 e7g6 Trade the lower value piece for a higher value piece.  MoveB:d5f6, Adjust the piece to a key area, where it holds more influence over the board. TacticB: d5f6 g6f6 b5e2 d7d5 g2g4 f6d8  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.65343475341797
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            94.03015899658203
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.62057113647461
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3N2k1/4pr2/3p2p1/1p3q1p/3Q2n1/8/8/5RKR b - - 0 30\". Which move is better? MoveA:g8f8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: g8f8 d4h8 Checkmate!  MoveB:f5e5, Displace the piece to a more promising position, strengthening its board authority. TacticB: f5e5 d4e5 f7f1 g1f1 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:f5e5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3N2k1/4pr2/3p2p1/1p3q1p/3Q2n1/8/8/5RKR b - - 0 30\". Which move is better? MoveA:g8f8, Reposition the piece to an assertive square, where it governs more of the board. TacticA: g8f8 d4h8 Checkmate!  MoveB:f5e5, Displace the piece to a more promising position, strengthening its board authority. TacticB: f5e5 d4e5 f7f1 g1f1 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            81.48571014404297
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            87.95198822021484
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            60.954994201660156
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"3q3k/6pp/5p2/p7/2QB2b1/8/P2N1PPP/1rN3K1 b - - 2 31\". Which move is better? MoveA:d8e7, Displace the piece to a more promising position, strengthening its board authority. TacticA: d8e7 d2b1 Trade the lower value piece for a higher value piece.  MoveB:g4e6, Plant the piece in a dominant spot, expanding its control over the board. TacticB: g4e6 c4e6 b1c1 d2f1 h7h6 e6e3  ",
+    "expected_output": "MoveB:g4e6",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"3q3k/6pp/5p2/p7/2QB2b1/8/P2N1PPP/1rN3K1 b - - 2 31\". Which move is better? MoveA:d8e7, Displace the piece to a more promising position, strengthening its board authority. TacticA: d8e7 d2b1 Trade the lower value piece for a higher value piece.  MoveB:g4e6, Plant the piece in a dominant spot, expanding its control over the board. TacticB: g4e6 c4e6 b1c1 d2f1 h7h6 e6e3  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.62479400634766
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            93.1453857421875
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.979103088378906
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2k2rr1/3b4/2nbp2R/pp1p1p1N/2pP4/P1P1PNP1/1PB2PP1/R3K3 b Q - 3 22\". Which move is better? MoveA:g8g7, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: g8g7 h5g7 Trade the lower value piece for a higher value piece.  MoveB:b5b4, By pushing a black pawn forward, it opens up the queenside, granting more freedom to maneuver other pieces. TacticB: b5b4 h5f4 g8h8 h6h3 b4b3 c2d1  ",
+    "expected_output": "MoveB:b5b4",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2k2rr1/3b4/2nbp2R/pp1p1p1N/2pP4/P1P1PNP1/1PB2PP1/R3K3 b Q - 3 22\". Which move is better? MoveA:g8g7, Move the piece to an aggressive spot, enhancing its control over the board. TacticA: g8g7 h5g7 Trade the lower value piece for a higher value piece.  MoveB:b5b4, By pushing a black pawn forward, it opens up the queenside, granting more freedom to maneuver other pieces. TacticB: b5b4 h5f4 g8h8 h6h3 b4b3 c2d1  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            82.49137115478516
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            92.93756103515625,
+            91.51758575439453
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.814823150634766
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"2r2r1k/p2Bqpp1/8/1p2b3/4Q3/P3P2P/1P3PP1/R1B1K2R b KQ - 0 20\". Which move is better? MoveA:e5c3, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: e5c3 b2c3 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Advance the piece to a strategic square, optimizing its control over the board. TacticB: h8g8 e4b1 e7d7 e1g1 d7d5 e3e4  ",
+    "expected_output": "MoveA:e5c3",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"2r2r1k/p2Bqpp1/8/1p2b3/4Q3/P3P2P/1P3PP1/R1B1K2R b KQ - 0 20\". Which move is better? MoveA:e5c3, Switch the piece to a more advantageous place, increasing its mastery over the board. TacticA: e5c3 b2c3 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Advance the piece to a strategic square, optimizing its control over the board. TacticB: h8g8 e4b1 e7d7 e1g1 d7d5 e3e4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.59671020507812
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            90.45650482177734
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            58.10994338989258
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"5k2/2p4p/1p1bQ3/1P6/3B3P/5qP1/5P2/6K1 b - - 11 49\". Which move is better? MoveA:f3d1, Reassign the piece to a central area, where it exercises more control over the board. TacticA: f3d1 g1g2 d1d4 e6f5 f8e8 f5h7   MoveB:f3f2, Lose a piece to clear a line or diagonal near the opposing king TacticB: f3f2 g1f2 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:f3d1",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"5k2/2p4p/1p1bQ3/1P6/3B3P/5qP1/5P2/6K1 b - - 11 49\". Which move is better? MoveA:f3d1, Reassign the piece to a central area, where it exercises more control over the board. TacticA: f3d1 g1g2 d1d4 e6f5 f8e8 f5h7   MoveB:f3f2, Lose a piece to clear a line or diagonal near the opposing king TacticB: f3f2 g1f2 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.69757843017578
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            91.6470947265625
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            57.83210372924805
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"7r/1bp2kp1/pp1p1q2/6p1/3PPn2/2N2PR1/PP1Q1P1P/6RK b - - 7 24\". Which move is better? MoveA:h8h2, Give up a piece to create an open pathway or diagonal near the enemy king TacticA: h8h2 h1h2 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Advance the piece to a strategic square, optimizing its control over the board. TacticB: h8g8 c3e2 f4h5 d2e3 h5g3 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:h8h2",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"7r/1bp2kp1/pp1p1q2/6p1/3PPn2/2N2PR1/PP1Q1P1P/6RK b - - 7 24\". Which move is better? MoveA:h8h2, Give up a piece to create an open pathway or diagonal near the enemy king TacticA: h8h2 h1h2 Trade the lower value piece for a higher value piece.  MoveB:h8g8, Advance the piece to a strategic square, optimizing its control over the board. TacticB: h8g8 c3e2 f4h5 d2e3 h5g3 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            78.63038635253906
+          ]
+        },
+        {
+          "indices": [
+            32,
+            33
+          ],
+          "logits": [
+            88.38665008544922,
+            87.64411926269531
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.451107025146484
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1k4r1/pp2pp2/2n5/q1P4p/P1Br3P/4QPp1/6P1/1RR3K1 w - - 2 27\". Which move is better? MoveA:c4b5, Place the piece in a commanding position, maximizing its control on the board. TacticA: c4b5 d4b4 b5c6 g8c8 c6e4 c8c7   MoveB:b1b7, Give up a piece to gain access to a file or diagonal near the enemy king TacticB: b1b7 b8b7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveA:c4b5",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1k4r1/pp2pp2/2n5/q1P4p/P1Br3P/4QPp1/6P1/1RR3K1 w - - 2 27\". Which move is better? MoveA:c4b5, Place the piece in a commanding position, maximizing its control on the board. TacticA: c4b5 d4b4 b5c6 g8c8 c6e4 c8c7   MoveB:b1b7, Give up a piece to gain access to a file or diagonal near the enemy king TacticB: b1b7 b8b7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            80.76708221435547
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            91.03756713867188
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            59.92308807373047
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"rq5r/3kb2p/p1p1p1pP/2ppP3/N1Pn1QP1/1P6/P2B1P2/2KRR3 b - - 2 24\". Which move is better? MoveA:d5c4, The pawn captures another pawn, altering the pawn structure. TacticA: d5c4 f4f7 b8b5 d2e3 a8f8 f7g7   MoveB:h8f8, Adjust the piece to a key area, where it holds more influence over the board. TacticB: h8f8 f4g3 d5c4 g3c3 b8b5 c3c4  ",
+    "expected_output": "MoveB:h8f8",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"rq5r/3kb2p/p1p1p1pP/2ppP3/N1Pn1QP1/1P6/P2B1P2/2KRR3 b - - 2 24\". Which move is better? MoveA:d5c4, The pawn captures another pawn, altering the pawn structure. TacticA: d5c4 f4f7 b8b5 d2e3 a8f8 f7g7   MoveB:h8f8, Adjust the piece to a key area, where it holds more influence over the board. TacticB: h8f8 f4g3 d5c4 g3c3 b8b5 c3c4  \nassistant\n<think>\n\n</think>\n\nMoveA",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            79.42994689941406
+          ]
+        },
+        {
+          "indices": [
+            32
+          ],
+          "logits": [
+            96.57916259765625
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.63863754272461
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "You are an expert chess player. You are given a chess board with FEN format. Your goal is to choose a better move given two candidate moves with their strategy explanations and tactics.",
+    "input": "The FEN of the given chess board is \"1rb2rk1/4pp2/2p3p1/p1q4p/P6P/1B6/1QP2PP1/1K1R3R w - - 0 21\". Which move is better? MoveA:b3e6, Reposition the piece to an assertive square, where it governs more of the board. TacticA: b3e6 c8e6 d1d3 e6f5 d3b3 b8b3   MoveB:b3f7, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticB: b3f7 g8f7 Trade the lower value piece for a higher value piece. ",
+    "expected_output": "MoveB:b3f7",
+    "response": {
+      "generated_text": "system\nClassify the better move. Output format: MoveA or MoveB\nuser\nThe FEN of the given chess board is \"1rb2rk1/4pp2/2p3p1/p1q4p/P6P/1B6/1QP2PP1/1K1R3R w - - 0 21\". Which move is better? MoveA:b3e6, Reposition the piece to an assertive square, where it governs more of the board. TacticA: b3e6 c8e6 d1d3 e6f5 d3b3 b8b3   MoveB:b3f7, Sacrifice a piece to carve open a file or diagonal close to the enemy king TacticB: b3f7 g8f7 Trade the lower value piece for a higher value piece. \nassistant\n<think>\n\n</think>\n\nMoveB",
+      "token_logits": [
+        {
+          "indices": [
+            9860
+          ],
+          "logits": [
+            83.52882385253906
+          ]
+        },
+        {
+          "indices": [
+            33
+          ],
+          "logits": [
+            92.51335144042969
+          ]
+        },
+        {
+          "indices": [
+            151645
+          ],
+          "logits": [
+            56.80520248413086
+          ]
+        }
+      ]
+    }
+  }
+]
